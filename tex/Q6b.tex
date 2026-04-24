@@ -147,35 +147,58 @@ from Admissible Non-Injective Projection}
         $\mathcal{L}_\Pi$ of~\eqref{eq:Lpi-shadow} is the image, under the Schr\"odinger representation~$d\pi_1$, of the
         kinetic sector of the sub-Riemannian Laplacian $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ on
         $\mathrm{Heis}_3(\mathbb{R})$, restricted to the admissible sector.
-        This hypothesis is open (Q5b-O1) and is expected to follow from the Plancherel decomposition of
-        $L^2(\mathrm{Heis}_3(\mathbb{R}))$; it is the only hypothesis introduced by Q5b beyond those of Q5a.
+        This is not a structural conjecture but a technical reconstruction step.
+        The Plancherel decomposition of $L^2(\mathrm{Heis}_3(\mathbb{R}))$ into Schr\"odinger representations
+        $\pi_\lambda$ acting on $L^2(\mathbb{R})$ is classical in the harmonic analysis of nilpotent Lie groups
+        (Corwin\textendash Greenleaf, Folland, Stein).
+        [H-lift] amounts to identifying the admissible restriction of $\mathcal{L}_\Pi$ with the image of the admissible
+        sector of $\Delta_H$ under $d\pi_1$; its resolution is expected within this standard framework.
+        The hypothesis is listed as open (Q5b-O1) to reflect the fact that this identification has not yet been written
+        out explicitly, not that it involves a conceptual gap.
 
-      \paragraph{Metric tensor from the principal symbol.}
+      \paragraph{From co-metric to effective metric.}
+        \label{par:cometric-metric}
         Under~[H-lift], the full effective operator $\mathcal{L}_{\mathrm{eff}}$ on
         $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
       \begin{equation}
         \label{eq:principal-symbol}
         \sigma_2(\mathcal{L}_{\mathrm{eff}})(x, k) \;=\; A^{\mu\nu}(x)\,k_\mu k_\nu,
         \end{equation}
-        where $A^{\mu\nu}(x)$ is a symmetric tensor with entries $A_\tau$ in the temporal sector and $A_H$ in the
-        sub-Riemannian horizontal sector.
-        Q5b Theorem~5.2 extracts from this symbol the effective metric
+        where $A^{\mu\nu}$ is a symmetric contravariant tensor on the cotangent bundle $T^*M$ with entries $A_\tau$ in
+        the temporal sector and $A_H$ in the horizontal sector.
+        The principal symbol is \emph{degenerate}: at the sub-Riemannian level inherited from Q5b, $A^{\mu\nu}$ has a
+        null direction along the central generator~$Z$ of $\mathrm{Heis}_3(\mathbb{R})$, reflecting the horizontal-only
+        propagation of the leading-order operator.
+        Consequently, $A^{\mu\nu}$ does not admit a direct inverse on $TM$ and does not itself define a metric tensor
+        at the principal-symbol level.
+
+        The effective metric $g_{\mu\nu}$ is recovered not by inverting the leading symbol but by completing the
+        sub-Riemannian co-metric through sub-principal corrections that lift the degeneracy along~$Z$.
+        Q5b Theorem~5.2 carries out this completion under~[H-lift], producing a non-degenerate contravariant tensor
       \begin{equation}
         \label{eq:metric-from-symbol}
-        g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}(x),
+        g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}_{\mathrm{eff}}(x),
         \end{equation}
-        defined on the non-degenerate part of the sub-Riemannian structure.
-        The metric is not an independent dynamical variable: it is a derived object encoding how admissible modes
-        propagate in the continuum limit.
+        where $A^{\mu\nu}_{\mathrm{eff}}$ denotes the completed co-metric.
+        The resulting $g_{\mu\nu}$ is an \emph{effective} metric in the sub-Riemannian sense of~\cite{Beau2026q5b}:
+        non-degenerate after completion, defined on the quotient by the residual null direction, and not identifiable
+        with the inverse of the leading-order symbol.
+        The metric is a derived object encoding how admissible modes propagate in the continuum limit, not an
+        independent dynamical variable.
 
-      \paragraph{Lorentzian signature.}
-        In homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash Infeld admissibility
-        constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have Lorentzian signature $(-,+,+,+)$
-        (Q5b Theorem~6.1, importing the argument of~\cite{Beau2026c}~Sections~5\textendash 6).
-        The signature is selected by exclusion of the three incompatible classes: Riemannian signature produces an
-        elliptic principal symbol and contradicts the finite-capacity bound of~A4; ultra-hyperbolic signature fails to
-        admit a globally well-posed initial value problem; degenerate signature is excluded at the level of the effective
-        metric after incorporation of sub-principal corrections.
+      \paragraph{Lorentzian signature (inherited, not derived).}
+        \label{par:signature-origin}
+        The Lorentzian signature of the effective metric is not established within the present paper.
+        It is inherited from Q5b Theorem~6.1, which itself imports the signature-selection argument of~\cite{Beau2026c}
+        (Sections~5\textendash 6): in homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash
+        Infeld admissibility constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have signature
+        $(-,+,+,+)$.
+        The structural content of the argument lies in the exclusion of the three incompatible alternatives: Riemannian
+        signature produces an elliptic principal symbol and contradicts the finite-capacity bound of~A4;
+        ultra-hyperbolic signature fails to admit a globally well-posed initial value problem; degenerate signature is
+        excluded at the level of the effective metric after the sub-principal completion described above.
+        The role of Q6b is to propagate this structural constraint to the effective geometry of
+        Section~\ref{sec:geometry}, not to re-establish it.
 
   \subsection{Inherited status discipline}
     \label{sec:status}
@@ -263,6 +286,24 @@ from Admissible Non-Injective Projection}
       Infeld dynamical picture; the present statement imports that content and reformulates it within the
       Q5b geometric setting of Section~\ref{sec:q5b}.
     \end{proof}
+
+    \begin{remark}[Uniqueness within the admissibility class]
+      \label{rem:schwarzschild-uniqueness}
+      The flux conservation equation~\eqref{eq:flux-conservation} determines the radial profile of the effective
+      metric only up to a class of spherically symmetric stationary solutions that a priori includes the
+      Schwarzschild\textendash de Sitter and Reissner\textendash Nordstr\"om deformations.
+      Each such deformation introduces an independent integration constant associated with an additional physical
+      scale --- a cosmological contribution in the first case, an electromagnetic charge in the second.
+      Within the present framework, these alternatives are not admitted: no scale beyond the Born\textendash Infeld
+      saturation constant~$c_\chi$ enters the admissibility structure of Foundation~M~\cite{Beau2026m}, and no
+      independent $U(1)$ charge is attached to the stationary obstruction in the exterior region used in
+      Theorem~\ref{thm:schwarzschild}.
+      The admissible exterior is therefore fixed, up to normalization, to the Schwarzschild form.
+      Uniqueness follows from the combined structural constraints of flux conservation and bounded admissibility,
+      not from symmetry alone.
+      A full structural exclusion of multi-scale deformations would require a separate analysis of admissibility
+      under additional scale parameters, which lies beyond the scope of the present paper.
+    \end{remark}
 
   \subsection{The horizon as a projection degeneracy}
     \label{sec:horizon}
@@ -361,7 +402,18 @@ from Admissible Non-Injective Projection}
     This is the first step toward an explicit metric from first principles and, through~\cite{Beau2026h}, toward a
     quantitative determination of Newton's constant~$G_N$.
 
-  \paragraph{Cosmological implications.}
+  \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
+    The exclusion argument of Remark~\ref{rem:schwarzschild-uniqueness} rests on the structural claim that no
+    dimensional parameter independent of the Born\textendash Infeld scale~$c_\chi$ and the spectral cascade
+    enters the admissibility structure of Foundation~M.
+    Making this claim rigorous would require establishing the following: the admissibility axioms A3\textendash A4
+    admit $c_\chi$ as their unique primitive dimensional scale, and any additional dimensional parameter not
+    computable, without free parameters or unfixed initial conditions, as a functional of $c_\chi$ and the spectral
+    cascade violates the closure of A3\textendash A4.
+    Note that finite resolution parameters such as $q$ are dimensionless and disappear in the continuum limit;
+    they fall outside the scope of this claim.
+    This structural lemma would close the argument of Remark~\ref{rem:schwarzschild-uniqueness} unconditionally and
+    is a natural complement to the non-injectivity result of~\cite{Beau2026l}.
     In homogeneous regimes, the admissibility flow gives a linear growth of cumulative projected capacity $I(n)$,
     underlying the emergent Hubble law and effective cosmological expansion~\cite{Cosmochrony}.
     The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
@@ -374,7 +426,6 @@ from Admissible Non-Injective Projection}
   All conceptual contributions, theoretical choices, and interpretations remain the sole responsibility of the
   author.
 
-  \clearpage
   \bibliographystyle{cosmochrony}
   \bibliography{cosmochrony-bibliography}
 
