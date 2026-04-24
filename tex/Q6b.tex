@@ -49,176 +49,182 @@ from Admissible Non-Injective Projection}
     No dynamical substrate is required at any step.
   \end{abstract}
 
-  \clearpage
-  \tableofcontents
+  \paragraph{Keywords.}
+    non-injective projection; emergent spacetime; admissibility; effective metric; Lorentzian geometry; sub-Riemannian
+    geometry; Heisenberg group; principal symbol; Schwarzschild solution; Einstein equations; spectral geometry; induced
+    gravity
 
-  \clearpage
+    \clearpage
+    \tableofcontents
+
+    \clearpage
+
   \section{Introduction}
-    \label{sec:intro}
+  \label{sec:intro}
 
-    \subsection*{Position in the programme}
+  \subsection*{Position in the programme}
 
-      The Cosmochrony programme~\cite{Cosmochrony} derives physical structure from a static relational substrate
-      $\chi$ through a non-injective projection $\Pi$ onto an observable space.
-      The companion paper Q6a~\cite{Beau2026q6a} derives gauge charges, the gauge group, and Yang\textendash Mills
-      dynamics from the fibre structure of~$\Pi$.
-      The present paper addresses the complementary macroscopic question: what effective geometry is selected when the
-      bounded admissibility constraints of Foundation~M~\cite{Beau2026m} are imposed on a spatially varying
-      projection?
+    The Cosmochrony programme~\cite{Cosmochrony} derives physical structure from a static relational substrate
+    $\chi$ through a non-injective projection $\Pi$ onto an observable space.
+    The companion paper Q6a~\cite{Beau2026q6a} derives gauge charges, the gauge group, and Yang\textendash Mills
+    dynamics from the fibre structure of~$\Pi$.
+    The present paper addresses the complementary macroscopic question: what effective geometry is selected when the
+    bounded admissibility constraints of Foundation~M~\cite{Beau2026m} are imposed on a spatially varying
+    projection?
 
-      The geometric chain is now in place.
-      Q5a~\cite{Beau2026q5a} establishes, under Hypotheses~H1,~H-w,~H-E1 and Conjecture~C, that the discrete admissible
-      Dirichlet forms on the Cayley graph $\mathrm{Cay}(G_q, S_q)$ Mosco-converge to a one-dimensional shadow operator
-      $\mathcal{L}_\Pi = -A\,\partial_x^2$ on $L^2(\mathbb{R})$.
-      Q5b~\cite{Beau2026q5b} promotes this one-dimensional shadow to a four-dimensional effective geometry: the BFS
-      shell stratification of $G_q$ converges, in the Gromov\textendash Hausdorff sense, to the
-      Carnot\textendash Carath\'eodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$ with homogeneous dimension
-      $D_{\mathrm{hom}} = 4$, and under the lifting hypothesis~[H-lift] the principal symbol of the effective operator
-      extends to a Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
+    The geometric chain is now in place.
+    Q5a~\cite{Beau2026q5a} establishes, under Hypotheses~H1,~H-w,~H-E1 and Conjecture~C, that the discrete admissible
+    Dirichlet forms on the Cayley graph $\mathrm{Cay}(G_q, S_q)$ Mosco-converge to a one-dimensional shadow operator
+    $\mathcal{L}_\Pi = -A\,\partial_x^2$ on $L^2(\mathbb{R})$.
+    Q5b~\cite{Beau2026q5b} promotes this one-dimensional shadow to a four-dimensional effective geometry: the BFS
+    shell stratification of $G_q$ converges, in the Gromov\textendash Hausdorff sense, to the
+    Carnot\textendash Carath\'eodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$ with homogeneous dimension
+    $D_{\mathrm{hom}} = 4$, and under the lifting hypothesis~[H-lift] the principal symbol of the effective operator
+    extends to a Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
 
-      The task of the present paper is to close the chain from this effective metric to the Einstein equations of
-      general relativity.
-      Three results are obtained: (i) the Schwarzschild metric as the unique stationary, spherically symmetric
-      exterior solution compatible with the admissibility flow (§\ref{sec:schwarzschild}); (ii) a structural
-      interpretation of the horizon as a projection degeneracy (§\ref{sec:horizon}); (iii) the identification of the
-      Einstein equations as consistency conditions of the emergent geometry, via the spectral entropy functional of the
-      Gravity paper~\cite{Beau2026h} (§\ref{sec:einstein}).
+    The task of the present paper is to close the chain from this effective metric to the Einstein equations of
+    general relativity.
+    Three results are obtained: (i) the Schwarzschild metric as the unique stationary, spherically symmetric
+    exterior solution compatible with the admissibility flow (§\ref{sec:schwarzschild}); (ii) a structural
+    interpretation of the horizon as a projection degeneracy (§\ref{sec:horizon}); (iii) the identification of the
+    Einstein equations as consistency conditions of the emergent geometry, via the spectral entropy functional of the
+    Gravity paper~\cite{Beau2026h} (§\ref{sec:einstein}).
 
-    \subsection*{What is and is not derived in this paper}
+  \subsection*{What is and is not derived in this paper}
 
-      This paper derives the \emph{structure} of effective spacetime geometry from the admissibility framework.
-      It does not derive the precise numerical value of Newton's constant $G_N$, nor does it prove the hypotheses
-      inherited from Q5a and Q5b.
-      All results are therefore conditional on~[H-lift] (Q5b Hypothesis~4.1) and on the Q5a Mosco convergence
-      hypotheses.
-      Open directions are collected in Section~\ref{sec:open}.
+    This paper derives the \emph{structure} of effective spacetime geometry from the admissibility framework.
+    It does not derive the precise numerical value of Newton's constant $G_N$, nor does it prove the hypotheses
+    inherited from Q5a and Q5b.
+    All results are therefore conditional on~[H-lift] (Q5b Hypothesis~4.1) and on the Q5a Mosco convergence
+    hypotheses.
+    Open directions are collected in Section~\ref{sec:open}.
 
-    \subsection*{Organisation}
+  \subsection*{Organisation}
 
-      Section~\ref{sec:continuum} reviews the Q5a\textendash Q5b geometric chain and collects the theorems used as
-      inputs.
-      Section~\ref{sec:geometry} derives the effective metric, imports its Lorentzian signature, establishes the
-      Schwarzschild exterior solution, and interprets the horizon.
-      Section~\ref{sec:einstein} closes the chain to the Einstein equations.
-      Section~\ref{sec:open} identifies the open directions.
+    Section~\ref{sec:continuum} reviews the Q5a\textendash Q5b geometric chain and collects the theorems used as
+    inputs.
+    Section~\ref{sec:geometry} derives the effective metric, imports its Lorentzian signature, establishes the
+    Schwarzschild exterior solution, and interprets the horizon.
+    Section~\ref{sec:einstein} closes the chain to the Einstein equations.
+    Section~\ref{sec:open} identifies the open directions.
 
   \section{The Q5a\textendash Q5b Geometric Chain}
-    \label{sec:continuum}
+  \label{sec:continuum}
 
-    \subsection{From the discrete projection to the 1D shadow operator}
-      \label{sec:q5a}
+  \subsection{From the discrete projection to the 1D shadow operator}
+    \label{sec:q5a}
 
-      The discrete admissibility filter $\Pi_q$ of Foundation~M~\cite{Beau2026m} acts on the orbit span
-      $\Omega_n^{(c)} \subset \mathbb{C}^q$, selecting admissible directions via the Born\textendash Infeld bound
-      $A_n \leq c_\chi/\sqrt{\lambda_n}$ (Axiom~A3 of~\cite{Beau2026m}).
-      Q5a~\cite{Beau2026q5a} establishes three convergences, conditionally on Hypotheses~H1,~H-w,~H-E1 and
-      Conjecture~C:
-      \begin{itemize}
-        \item[(T1)] a Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
-        $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at finite~$q$;
-        \item[(T2)] convergence of rescaled Weil generators to the metaplectic generators of
-        $\mathrm{Heis}_3(\mathbb{R})$;
-        \item[(T3)] Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to a second-order operator
-        \begin{equation}
-          \label{eq:Lpi-shadow}
-          \mathcal{L}_\Pi \;=\; -A\,\partial_x^2
-          \quad\text{on}\quad L^2(\mathbb{R}),
-          \qquad A > 0.
-        \end{equation}
-      \end{itemize}
+    The discrete admissibility filter $\Pi_q$ of Foundation~M~\cite{Beau2026m} acts on the orbit span
+    $\Omega_n^{(c)} \subset \mathbb{C}^q$, selecting admissible directions via the Born\textendash Infeld bound
+    $A_n \leq c_\chi/\sqrt{\lambda_n}$ (Axiom~A3 of~\cite{Beau2026m}).
+    Q5a~\cite{Beau2026q5a} establishes three convergences, conditionally on Hypotheses~H1,~H-w,~H-E1 and
+    Conjecture~C:
+    \begin{itemize}
+      \item[(T1)] a Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
+      $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at finite~$q$;
+      \item[(T2)] convergence of rescaled Weil generators to the metaplectic generators of
+      $\mathrm{Heis}_3(\mathbb{R})$;
+      \item[(T3)] Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to a second-order operator
+      \begin{equation}
+        \label{eq:Lpi-shadow}
+        \mathcal{L}_\Pi \;=\; -A\,\partial_x^2
+        \quad\text{on}\quad L^2(\mathbb{R}),
+        \qquad A > 0.
+      \end{equation}
+    \end{itemize}
 
-      The operator~\eqref{eq:Lpi-shadow} is one-dimensional: it acts on the central coordinate~$x$ of the Weil block,
-      and is the operator-theoretic shadow of the homogeneous four-dimensional structure carried by
-      $\mathrm{Heis}_3(\mathbb{R})$.
-      The passage from this one-dimensional shadow to a four-dimensional effective geometry is the content of Q5b.
+    The operator~\eqref{eq:Lpi-shadow} is one-dimensional: it acts on the central coordinate~$x$ of the Weil block,
+    and is the operator-theoretic shadow of the homogeneous four-dimensional structure carried by
+    $\mathrm{Heis}_3(\mathbb{R})$.
+    The passage from this one-dimensional shadow to a four-dimensional effective geometry is the content of Q5b.
 
-    \subsection{From the 1D shadow to a four-dimensional Carnot geometry}
-      \label{sec:q5b}
+  \subsection{From the 1D shadow to a four-dimensional Carnot geometry}
+    \label{sec:q5b}
 
-      Q5b~\cite{Beau2026q5b} establishes three further results that together promote~$\mathcal{L}_\Pi$ to a
-      four-dimensional effective metric.
+    Q5b~\cite{Beau2026q5b} establishes three further results that together promote~$\mathcal{L}_\Pi$ to a
+    four-dimensional effective metric.
 
-      \paragraph{Carnot convergence.}
-        By the Bass\textendash Guivarc'h theorem, $\mathrm{Heis}_3(\mathbb{R})$ is a Carnot group of homogeneous dimension
-        $D_{\mathrm{hom}} = 4$ (Q5b Theorem~2.1).
-        The BFS shell stratification $\{S_n\}$ of $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the
-        pre-saturation regime $n \ll q$, to the Carnot\textendash Carath\'eodory sphere foliation of the continuous group
-        as a structural consequence of Pansu's asymptotic cone theorem (Q5b Theorem~3.2~\cite{Beau2026q5b}).
-        The limiting geometry therefore carries spectral dimension~$4$.
+    \paragraph{Carnot convergence.}
+      By the Bass\textendash Guivarc'h theorem, $\mathrm{Heis}_3(\mathbb{R})$ is a Carnot group of homogeneous dimension
+      $D_{\mathrm{hom}} = 4$ (Q5b Theorem~2.1).
+      The BFS shell stratification $\{S_n\}$ of $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the
+      pre-saturation regime $n \ll q$, to the Carnot\textendash Carath\'eodory sphere foliation of the continuous group
+      as a structural consequence of Pansu's asymptotic cone theorem (Q5b Theorem~3.2~\cite{Beau2026q5b}).
+      The limiting geometry therefore carries spectral dimension~$4$.
 
-      \paragraph{Lifting hypothesis.}
-        Q5b introduces Hypothesis~[H-lift] (Definition~4.1 of~\cite{Beau2026q5b}): the one-dimensional shadow
-        $\mathcal{L}_\Pi$ of~\eqref{eq:Lpi-shadow} is the image, under the Schr\"odinger representation~$d\pi_1$, of the
-        kinetic sector of the sub-Riemannian Laplacian $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ on
-        $\mathrm{Heis}_3(\mathbb{R})$, restricted to the admissible sector.
-        This is not a structural conjecture but a technical reconstruction step.
-        The Plancherel decomposition of $L^2(\mathrm{Heis}_3(\mathbb{R}))$ into Schr\"odinger representations
-        $\pi_\lambda$ acting on $L^2(\mathbb{R})$ is classical in the harmonic analysis of nilpotent Lie groups
-        (Corwin\textendash Greenleaf, Folland, Stein).
-        [H-lift] amounts to identifying the admissible restriction of $\mathcal{L}_\Pi$ with the image of the admissible
-        sector of $\Delta_H$ under $d\pi_1$; its resolution is expected within this standard framework.
-        The hypothesis is listed as open (Q5b-O1) to reflect the fact that this identification has not yet been written
-        out explicitly, not that it involves a conceptual gap.
+    \paragraph{Lifting hypothesis.}
+      Q5b introduces Hypothesis~[H-lift] (Definition~4.1 of~\cite{Beau2026q5b}): the one-dimensional shadow
+      $\mathcal{L}_\Pi$ of~\eqref{eq:Lpi-shadow} is the image, under the Schr\"odinger representation~$d\pi_1$, of the
+      kinetic sector of the sub-Riemannian Laplacian $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ on
+      $\mathrm{Heis}_3(\mathbb{R})$, restricted to the admissible sector.
+      This is not a structural conjecture but a technical reconstruction step.
+      The Plancherel decomposition of $L^2(\mathrm{Heis}_3(\mathbb{R}))$ into Schr\"odinger representations
+      $\pi_\lambda$ acting on $L^2(\mathbb{R})$ is classical in the harmonic analysis of nilpotent Lie groups
+      (Corwin\textendash Greenleaf, Folland, Stein).
+      [H-lift] amounts to identifying the admissible restriction of $\mathcal{L}_\Pi$ with the image of the admissible
+      sector of $\Delta_H$ under $d\pi_1$; its resolution is expected within this standard framework.
+      The hypothesis is listed as open (Q5b-O1) to reflect the fact that this identification has not yet been written
+      out explicitly, not that it involves a conceptual gap.
 
-      \paragraph{From co-metric to effective metric.}
-        \label{par:cometric-metric}
-        Under~[H-lift], the full effective operator $\mathcal{L}_{\mathrm{eff}}$ on
-        $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
+    \paragraph{From co-metric to effective metric.}
+      \label{par:cometric-metric}
+      Under~[H-lift], the full effective operator $\mathcal{L}_{\mathrm{eff}}$ on
+      $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
       \begin{equation}
         \label{eq:principal-symbol}
         \sigma_2(\mathcal{L}_{\mathrm{eff}})(x, k) \;=\; A^{\mu\nu}(x)\,k_\mu k_\nu,
-        \end{equation}
-        where $A^{\mu\nu}$ is a symmetric contravariant tensor on the cotangent bundle $T^*M$ with entries $A_\tau$ in
-        the temporal sector and $A_H$ in the horizontal sector.
-        The principal symbol is \emph{degenerate}: at the sub-Riemannian level inherited from Q5b, $A^{\mu\nu}$ has a
-        null direction along the central generator~$Z$ of $\mathrm{Heis}_3(\mathbb{R})$, reflecting the horizontal-only
-        propagation of the leading-order operator.
-        Consequently, $A^{\mu\nu}$ does not admit a direct inverse on $TM$ and does not itself define a metric tensor
-        at the principal-symbol level.
+      \end{equation}
+      where $A^{\mu\nu}$ is a symmetric contravariant tensor on the cotangent bundle $T^*M$ with entries $A_\tau$ in
+      the temporal sector and $A_H$ in the horizontal sector.
+      The principal symbol is \emph{degenerate}: at the sub-Riemannian level inherited from Q5b, $A^{\mu\nu}$ has a
+      null direction along the central generator~$Z$ of $\mathrm{Heis}_3(\mathbb{R})$, reflecting the horizontal-only
+      propagation of the leading-order operator.
+      Consequently, $A^{\mu\nu}$ does not admit a direct inverse on $TM$ and does not itself define a metric tensor
+      at the principal-symbol level.
 
-        The effective metric $g_{\mu\nu}$ is recovered not by inverting the leading symbol but by completing the
-        sub-Riemannian co-metric through sub-principal corrections that lift the degeneracy along~$Z$.
-        Q5b Theorem~5.2 carries out this completion under~[H-lift], producing a non-degenerate contravariant tensor
+      The effective metric $g_{\mu\nu}$ is recovered not by inverting the leading symbol but by completing the
+      sub-Riemannian co-metric through sub-principal corrections that lift the degeneracy along~$Z$.
+      Q5b Theorem~5.2 carries out this completion under~[H-lift], producing a non-degenerate contravariant tensor
       \begin{equation}
         \label{eq:metric-from-symbol}
         g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}_{\mathrm{eff}}(x),
-        \end{equation}
-        where $A^{\mu\nu}_{\mathrm{eff}}$ denotes the completed co-metric.
-        The resulting $g_{\mu\nu}$ is an \emph{effective} metric in the sub-Riemannian sense of~\cite{Beau2026q5b}:
-        non-degenerate after completion, defined on the quotient by the residual null direction, and not identifiable
-        with the inverse of the leading-order symbol.
-        The metric is a derived object encoding how admissible modes propagate in the continuum limit, not an
-        independent dynamical variable.
+      \end{equation}
+      where $A^{\mu\nu}_{\mathrm{eff}}$ denotes the completed co-metric.
+      The resulting $g_{\mu\nu}$ is an \emph{effective} metric in the sub-Riemannian sense of~\cite{Beau2026q5b}:
+      non-degenerate after completion, defined on the quotient by the residual null direction, and not identifiable
+      with the inverse of the leading-order symbol.
+      The metric is a derived object encoding how admissible modes propagate in the continuum limit, not an
+      independent dynamical variable.
 
-      \paragraph{Lorentzian signature (inherited, not derived).}
-        \label{par:signature-origin}
-        The Lorentzian signature of the effective metric is not established within the present paper.
-        It is inherited from Q5b Theorem~6.1, which itself imports the signature-selection argument of~\cite{Beau2026c}
-        (Sections~5\textendash 6): in homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash
-        Infeld admissibility constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have signature
-        $(-,+,+,+)$.
-        The structural content of the argument lies in the exclusion of the three incompatible alternatives: Riemannian
-        signature produces an elliptic principal symbol and contradicts the finite-capacity bound of~A4;
-        ultra-hyperbolic signature fails to admit a globally well-posed initial value problem; degenerate signature is
-        excluded at the level of the effective metric after the sub-principal completion described above.
-        The role of Q6b is to propagate this structural constraint to the effective geometry of
-        Section~\ref{sec:geometry}, not to re-establish it.
+    \paragraph{Lorentzian signature (inherited, not derived).}
+      \label{par:signature-origin}
+      The Lorentzian signature of the effective metric is not established within the present paper.
+      It is inherited from Q5b Theorem~6.1, which itself imports the signature-selection argument of~\cite{Beau2026c}
+      (Sections~5\textendash 6): in homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash
+      Infeld admissibility constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have signature
+      $(-,+,+,+)$.
+      The structural content of the argument lies in the exclusion of the three incompatible alternatives: Riemannian
+      signature produces an elliptic principal symbol and contradicts the finite-capacity bound of~A4;
+      ultra-hyperbolic signature fails to admit a globally well-posed initial value problem; degenerate signature is
+      excluded at the level of the effective metric after the sub-principal completion described above.
+      The role of Q6b is to propagate this structural constraint to the effective geometry of
+      Section~\ref{sec:geometry}, not to re-establish it.
 
   \subsection{Inherited status discipline}
-    \label{sec:status}
+  \label{sec:status}
 
-    The results of the present paper are conditional on the following hypotheses, all inherited from
-    Q5a~\cite{Beau2026q5a} and Q5b~\cite{Beau2026q5b} and carried forward without modification:
-    \begin{itemize}
-      \item H1, H-w, H-E1 (Q5a): embedding, weight stabilisation, and energy control hypotheses governing the Mosco
-      limit of~\eqref{eq:Lpi-shadow}.
-      \item Conjecture~C (Q5a): discrete Rellich compactness, numerically confirmed at the pair level for
-      $q \leq 401$ via the O-series pipeline~\cite{Beau2026a16,Beau2026a28}.
-      \item [H-lift] (Q5b~Definition~4.1): identification of $\mathcal{L}_\Pi$ as the kinetic sector of
-      $d\pi_1(\Delta_H)$.
-    \end{itemize}
-    Closing these hypotheses is the subject of open direction~Q5b-O1 (Section~\ref{sec:open}) and would remove all
-    conditionality from the results below.
+  The results of the present paper are conditional on the following hypotheses, all inherited from
+  Q5a~\cite{Beau2026q5a} and Q5b~\cite{Beau2026q5b} and carried forward without modification:
+  \begin{itemize}
+    \item H1, H-w, H-E1 (Q5a): embedding, weight stabilisation, and energy control hypotheses governing the Mosco
+    limit of~\eqref{eq:Lpi-shadow}.
+    \item Conjecture~C (Q5a): discrete Rellich compactness, numerically confirmed at the pair level for
+    $q \leq 401$ via the O-series pipeline~\cite{Beau2026a16,Beau2026a28}.
+    \item [H-lift] (Q5b~Definition~4.1): identification of $\mathcal{L}_\Pi$ as the kinetic sector of
+    $d\pi_1(\Delta_H)$.
+  \end{itemize}
+  Closing these hypotheses is the subject of open direction~Q5b-O1 (Section~\ref{sec:open}) and would remove all
+  conditionality from the results below.
 
   \section{Effective Spacetime Geometry}
   \label{sec:geometry}
