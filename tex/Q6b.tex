@@ -1,5 +1,5 @@
 % Effective Spacetime Geometry from Admissible Non-Injective Projection
-% Cosmochrony companion paper M4b
+% Cosmochrony companion paper Q6b
 
 \documentclass[11pt,a4paper]{article}
 
@@ -7,6 +7,7 @@
 \usepackage{enumerate}
 \usepackage{hyperref}
 \usepackage{doi}
+\usepackage[numbers,sort&compress]{natbib}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -29,21 +30,22 @@ from Admissible Non-Injective Projection}
   \maketitle
 
   \begin{abstract}
-    Continuing from the gauge structure established in the companion
-    paper~\cite{Q6a}, we derive effective spacetime geometry from the admissibility
-    framework of~\cite{FoundationM} without introducing it as a postulate.
-    In the continuum limit $q \to \infty$ of~\cite{Q5a}, the discrete admissibility
-    filter $\Pi_n$ converges to an effective continuum operator $\mathcal{L}_\Pi$
-    whose principal symbol defines an effective metric tensor
-    $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
-    The bounded Born\textendash Infeld admissibility constraint (A3--A4) restricts
-    the admissible forms of $A^{\mu\nu}(x)$: in homogeneous regimes, hyperbolicity
-    and spectral stability uniquely select Minkowski geometry; in the presence of a
-    localised stationary obstruction, flux conservation forces the Schwarzschild
-    geometry as the unique stationary exterior solution.
-    The Einstein equations emerge as consistency conditions of emergent geometry,
-    with the Einstein\textendash Hilbert action derived rigorously
-    in~\cite{Gravity}.
+    Continuing from the gauge structure established in the companion paper Q6a~\cite{Beau2026q6a}, we derive effective
+    spacetime geometry from the admissibility framework of Foundation~M~\cite{Beau2026m} by importing the continuum
+    limit and geometric-extraction theorems of the companion paper Q5b~\cite{Beau2026q5b}.
+    Under the lifting hypothesis~[H-lift] of Q5b and the Mosco hypotheses of Q5a~\cite{Beau2026q5a}, the admissibility
+    filter $\Pi_q$ converges to an effective operator $\mathcal{L}_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times
+    \mathrm{Heis}_3(\mathbb{R})$ whose principal symbol defines a four-dimensional effective metric tensor
+    $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature~$(-,+,+,+)$
+    (Q5b Theorems~5.2 and~6.1).
+    In the presence of a localised stationary obstruction to the admissibility flow with spherical symmetry, flux
+    conservation within this effective geometry forces the Schwarzschild metric as the unique stationary exterior
+    solution, with the horizon appearing as a degeneracy of the principal symbol rather than as a singularity of the
+    underlying admissible structure.
+    The Einstein equations emerge as consistency conditions of the emergent geometry, with the Einstein\textendash
+    Hilbert action derived rigorously from the spectral entropy functional in the Gravity
+    paper~\cite{Beau2026h}.
+    The present paper closes the chain $\Pi_q \to \mathcal{L}_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$.
     No dynamical substrate is required at any step.
   \end{abstract}
 
@@ -52,327 +54,328 @@ from Admissible Non-Injective Projection}
 
     \subsection*{Position in the programme}
 
-      The companion paper~\cite{Q6a} derives gauge charges, the gauge group, and
-      Yang\textendash Mills dynamics from the admissibility structure of non-injective
-      projection.
-      The present paper addresses the complementary macroscopic question: what
-      effective geometry is selected when the admissibility constraints
-      of~\cite{FoundationM} are imposed on a spatially varying projection?
-      The answer is Lorentzian geometry with Schwarzschild as the exterior stationary
-      solution (§\ref{sec:geometry}).
+      The Cosmochrony programme~\cite{Cosmochrony} derives physical structure from a static relational substrate
+      $\chi$ through a non-injective projection $\Pi$ onto an observable space.
+      The companion paper Q6a~\cite{Beau2026q6a} derives gauge charges, the gauge group, and Yang\textendash Mills
+      dynamics from the fibre structure of~$\Pi$.
+      The present paper addresses the complementary macroscopic question: what effective geometry is selected when the
+      bounded admissibility constraints of Foundation~M~\cite{Beau2026m} are imposed on a spatially varying
+      projection?
+
+      The geometric chain is now in place.
+      Q5a~\cite{Beau2026q5a} establishes, under Hypotheses~H1,~H-w,~H-E1 and Conjecture~C, that the discrete admissible
+      Dirichlet forms on the Cayley graph $\mathrm{Cay}(G_q, S_q)$ Mosco-converge to a one-dimensional shadow operator
+      $\mathcal{L}_\Pi = -A\,\partial_x^2$ on $L^2(\mathbb{R})$.
+      Q5b~\cite{Beau2026q5b} promotes this one-dimensional shadow to a four-dimensional effective geometry: the BFS
+      shell stratification of $G_q$ converges, in the Gromov\textendash Hausdorff sense, to the
+      Carnot\textendash Carath\'eodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$ with homogeneous dimension
+      $D_{\mathrm{hom}} = 4$, and under the lifting hypothesis~[H-lift] the principal symbol of the effective operator
+      extends to a Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
+
+      The task of the present paper is to close the chain from this effective metric to the Einstein equations of
+      general relativity.
+      Three results are obtained: (i) the Schwarzschild metric as the unique stationary, spherically symmetric
+      exterior solution compatible with the admissibility flow (§\ref{sec:schwarzschild}); (ii) a structural
+      interpretation of the horizon as a projection degeneracy (§\ref{sec:horizon}); (iii) the identification of the
+      Einstein equations as consistency conditions of the emergent geometry, via the spectral entropy functional of the
+      Gravity paper~\cite{Beau2026h} (§\ref{sec:einstein}).
 
     \subsection*{What is and is not derived in this paper}
 
-      This paper derives the \emph{structure} of effective spacetime geometry from the
-      admissibility framework.
-      It does not derive the precise numerical value of Newton's constant or
-      quantitative cosmological parameters.
-      The rigorous Mosco convergence establishing the continuum limit is established
-      conditionally in~\cite{Q5a}; the present paper uses it as a working hypothesis
-      throughout.
+      This paper derives the \emph{structure} of effective spacetime geometry from the admissibility framework.
+      It does not derive the precise numerical value of Newton's constant $G_N$, nor does it prove the hypotheses
+      inherited from Q5a and Q5b.
+      All results are therefore conditional on~[H-lift] (Q5b Hypothesis~4.1) and on the Q5a Mosco convergence
+      hypotheses.
+      Open directions are collected in Section~\ref{sec:open}.
 
     \subsection*{Organisation}
 
-      Section~\ref{sec:continuum} establishes the continuum limit of the discrete
-      projection $\Pi_n$ and the emergence of an effective differential operator.
-      Section~\ref{sec:geometry} derives the effective metric from the principal
-      symbol of $\mathcal{L}_\Pi$ and establishes the emergence of Minkowski and
-      Schwarzschild geometries.
+      Section~\ref{sec:continuum} reviews the Q5a\textendash Q5b geometric chain and collects the theorems used as
+      inputs.
+      Section~\ref{sec:geometry} derives the effective metric, imports its Lorentzian signature, establishes the
+      Schwarzschild exterior solution, and interprets the horizon.
+      Section~\ref{sec:einstein} closes the chain to the Einstein equations.
       Section~\ref{sec:open} identifies the open directions.
 
-  \section{Continuum Limit of the Admissibility Projection}
+  \section{The Q5a\textendash Q5b Geometric Chain}
     \label{sec:continuum}
 
-    \subsection{From discrete $\Pi_n$ to a continuum operator}
+    \subsection{From the discrete projection to the 1D shadow operator}
+      \label{sec:q5a}
 
-      The discrete projection $\Pi_n$ acts on the orbit span
-      $\Omega_n^{(c)} \subset \mathbb{C}^q$, filtering admissible directions via the
-      Born\textendash Infeld bound $A_n \leq c_\chi/\sqrt{\lambda_n}$
-      (Foundation~M, Axiom~A3).
-      As established in~\cite{FoundationM} §3.5, the large-$q$ limit sends:
-      \begin{align}
-        G_q &\;\longrightarrow\; \mathrm{Heis}_3(\mathbb{R}),\\
-        \mathbb{C}^q &\;\longrightarrow\; L^2(\mathbb{R}),\\
-        \text{BFS shells } S_n &\;\longrightarrow\; \text{continuous foliation},\\
-        \Pi_n \text{ (discrete)} &\;\longrightarrow\; \mathcal{L}_\Pi
-        \text{ (continuum operator)}.
-      \end{align}
+      The discrete admissibility filter $\Pi_q$ of Foundation~M~\cite{Beau2026m} acts on the orbit span
+      $\Omega_n^{(c)} \subset \mathbb{C}^q$, selecting admissible directions via the Born\textendash Infeld bound
+      $A_n \leq c_\chi/\sqrt{\lambda_n}$ (Axiom~A3 of~\cite{Beau2026m}).
+      Q5a~\cite{Beau2026q5a} establishes three convergences, conditionally on Hypotheses~H1,~H-w,~H-E1 and
+      Conjecture~C:
+      \begin{itemize}
+        \item[(T1)] a Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
+        $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at finite~$q$;
+        \item[(T2)] convergence of rescaled Weil generators to the metaplectic generators of
+        $\mathrm{Heis}_3(\mathbb{R})$;
+        \item[(T3)] Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to a second-order operator
+        \begin{equation}
+          \label{eq:Lpi-shadow}
+          \mathcal{L}_\Pi \;=\; -A\,\partial_x^2
+          \quad\text{on}\quad L^2(\mathbb{R}),
+          \qquad A > 0.
+        \end{equation}
+      \end{itemize}
 
-      The continuum limit of relational Laplacians on graphs of the type
-      $\mathrm{Cay}(G_q, S_q)$ is governed by standard spectral convergence
-      results~\cite{BornInfeld}: under mild regularity conditions, the graph Laplacian
-      converges in the strong-resolvent sense to a second-order differential operator
-      \begin{equation}
-        \label{eq:continuum-op}
-        \mathcal{L}_\Pi \;=\; \nabla_\mu\bigl(A^{\mu\nu}(x)\,\nabla_\nu\bigr),
-      \end{equation}
-      where $A^{\mu\nu}(x)$ is a symmetric tensor encoding the local connectivity
-      and stiffness of the admissible projection.
+      The operator~\eqref{eq:Lpi-shadow} is one-dimensional: it acts on the central coordinate~$x$ of the Weil block,
+      and is the operator-theoretic shadow of the homogeneous four-dimensional structure carried by
+      $\mathrm{Heis}_3(\mathbb{R})$.
+      The passage from this one-dimensional shadow to a four-dimensional effective geometry is the content of Q5b.
 
-      \begin{remark}[Status of the continuum limit]
-        The convergence $\Pi_n \to \mathcal{L}_\Pi$ is established qualitatively
-        in~\cite{FoundationM} and rigorously for the Heisenberg Cayley graph
-        $\mathrm{Cay}(G_q, S_q)$ conditionally in~\cite{Q5a} (Theorem~7.3, under
-        Hypotheses H1, H-w, H-E1, and numerically confirmed Conjecture~C).
-        The present section uses this result as a working hypothesis.
-        A fully rigorous proof closing the remaining hypotheses H1 and H2 is
-        identified as an open direction in Section~\ref{sec:open}.
-      \end{remark}
+    \subsection{From the 1D shadow to a four-dimensional Carnot geometry}
+      \label{sec:q5b}
 
-    \subsection{The operator-metric correspondence}
+      Q5b~\cite{Beau2026q5b} establishes three further results that together promote~$\mathcal{L}_\Pi$ to a
+      four-dimensional effective metric.
 
-      In admissible continuum regimes, the operator $\mathcal{L}_\Pi$ has a
-      well-defined principal symbol:
+      \paragraph{Carnot convergence.}
+        By the Bass\textendash Guivarc'h theorem, $\mathrm{Heis}_3(\mathbb{R})$ is a Carnot group of homogeneous dimension
+        $D_{\mathrm{hom}} = 4$ (Q5b Theorem~2.1).
+        The BFS shell stratification $\{S_n\}$ of $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the
+        pre-saturation regime $n \ll q$, to the Carnot\textendash Carath\'eodory sphere foliation of the continuous group
+        as a structural consequence of Pansu's asymptotic cone theorem (Q5b Theorem~3.2~\cite{Beau2026q5b}).
+        The limiting geometry therefore carries spectral dimension~$4$.
+
+      \paragraph{Lifting hypothesis.}
+        Q5b introduces Hypothesis~[H-lift] (Definition~4.1 of~\cite{Beau2026q5b}): the one-dimensional shadow
+        $\mathcal{L}_\Pi$ of~\eqref{eq:Lpi-shadow} is the image, under the Schr\"odinger representation~$d\pi_1$, of the
+        kinetic sector of the sub-Riemannian Laplacian $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ on
+        $\mathrm{Heis}_3(\mathbb{R})$, restricted to the admissible sector.
+        This hypothesis is open (Q5b-O1) and is expected to follow from the Plancherel decomposition of
+        $L^2(\mathrm{Heis}_3(\mathbb{R}))$; it is the only hypothesis introduced by Q5b beyond those of Q5a.
+
+      \paragraph{Metric tensor from the principal symbol.}
+        Under~[H-lift], the full effective operator $\mathcal{L}_{\mathrm{eff}}$ on
+        $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
       \begin{equation}
         \label{eq:principal-symbol}
-        \sigma_2(\mathcal{L}_\Pi)(x, k)
-        \;=\; A^{\mu\nu}(x)\,k_\mu k_\nu.
-      \end{equation}
-      This symbol defines an effective metric tensor~\cite{BornInfeld}:
+        \sigma_2(\mathcal{L}_{\mathrm{eff}})(x, k) \;=\; A^{\mu\nu}(x)\,k_\mu k_\nu,
+        \end{equation}
+        where $A^{\mu\nu}(x)$ is a symmetric tensor with entries $A_\tau$ in the temporal sector and $A_H$ in the
+        sub-Riemannian horizontal sector.
+        Q5b Theorem~5.2 extracts from this symbol the effective metric
       \begin{equation}
         \label{eq:metric-from-symbol}
-        g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}(x).
-      \end{equation}
-      The metric is not an independent dynamical variable: it is a derived object
-      encoding how admissible modes propagate in the continuum limit.
-      This is the operator-metric correspondence on which all subsequent geometric
-      results rest.
+        g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}(x),
+        \end{equation}
+        defined on the non-degenerate part of the sub-Riemannian structure.
+        The metric is not an independent dynamical variable: it is a derived object encoding how admissible modes
+        propagate in the continuum limit.
+
+      \paragraph{Lorentzian signature.}
+        In homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash Infeld admissibility
+        constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have Lorentzian signature $(-,+,+,+)$
+        (Q5b Theorem~6.1, importing the argument of~\cite{Beau2026c}~Sections~5\textendash 6).
+        The signature is selected by exclusion of the three incompatible classes: Riemannian signature produces an
+        elliptic principal symbol and contradicts the finite-capacity bound of~A4; ultra-hyperbolic signature fails to
+        admit a globally well-posed initial value problem; degenerate signature is excluded at the level of the effective
+        metric after incorporation of sub-principal corrections.
+
+  \subsection{Inherited status discipline}
+    \label{sec:status}
+
+    The results of the present paper are conditional on the following hypotheses, all inherited from
+    Q5a~\cite{Beau2026q5a} and Q5b~\cite{Beau2026q5b} and carried forward without modification:
+    \begin{itemize}
+      \item H1, H-w, H-E1 (Q5a): embedding, weight stabilisation, and energy control hypotheses governing the Mosco
+      limit of~\eqref{eq:Lpi-shadow}.
+      \item Conjecture~C (Q5a): discrete Rellich compactness, numerically confirmed at the pair level for
+      $q \leq 401$ via the O-series pipeline~\cite{Beau2026a16,Beau2026a28}.
+      \item [H-lift] (Q5b~Definition~4.1): identification of $\mathcal{L}_\Pi$ as the kinetic sector of
+      $d\pi_1(\Delta_H)$.
+    \end{itemize}
+    Closing these hypotheses is the subject of open direction~Q5b-O1 (Section~\ref{sec:open}) and would remove all
+    conditionality from the results below.
 
   \section{Effective Spacetime Geometry}
-    \label{sec:geometry}
+  \label{sec:geometry}
 
-    \subsection{Metric from the principal symbol}
+  \subsection{The effective metric}
+    \label{sec:metric}
 
-      The operator-metric correspondence~\eqref{eq:metric-from-symbol} gives the
-      effective metric as $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$.
-      This metric is not postulated: it encodes how admissible modes propagate in
-      the continuum limit of the projection.
+    Under the hypotheses of Section~\ref{sec:status}, Q5b Theorem~5.2 gives the effective metric
+    $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ on the non-degenerate part of the sub-Riemannian structure, with Lorentzian
+    signature~$(-,+,+,+)$ from Q5b Theorem~6.1.
+    The metric is defined on the effective continuum $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ and
+    governs the propagation of admissible modes in the continuum limit of the projection.
 
-    \subsection{Signature selection from admissibility}
+    \begin{remark}[Nature of the effective four-dimensionality]
+      \label{rem:4d}
+      The effective four-dimensionality is not that of a non-degenerate pseudo-Riemannian manifold at the
+      principal-symbol level.
+      It arises from the homogeneous dimension $D_{\mathrm{hom}} = 4$ of the underlying Carnot structure (Q5b
+      Theorem~3.2), which governs both volume growth and spectral scaling.
+      The Lorentzian metric extracted from the principal symbol is an effective object, valid after projection onto
+      admissible continuum configurations; it is not a smooth metric at every point of the sub-Riemannian space
+      $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ without further hypotheses.
+      Extending the construction to a full $4\times 4$ non-degenerate Lorentzian metric that incorporates the
+      central direction~$Z$ is the content of Q5b-O2.
+    \end{remark}
 
-      \begin{theorem}[Lorentzian signature from spectral admissibility,
-        after~\cite{BornInfeld}]
-        \label{thm:signature}
-        In homogeneous and quasi-isotropic admissible regimes, the
-        Born\textendash Infeld admissibility constraint (A3--A4 of~\cite{FoundationM})
-        forces the effective metric to have Lorentzian signature $(-,+,+,+)$.
-      \end{theorem}
+  \subsection{Schwarzschild geometry from flux conservation}
+    \label{sec:schwarzschild}
 
-      \begin{proof}
-        The bounded Born\textendash Infeld flux constraint excludes purely diffusive
-        (parabolic) effective descriptions, which would imply instantaneous propagation
-        of perturbations and contradict the finite capacity bound of A4.
-        A Riemannian signature $(+,+,+,+)$ produces an elliptic principal symbol,
-        which is also excluded.
-        An ultra-hyperbolic signature (more than one time direction) fails to admit a
-        globally well-posed initial value problem and is excluded by the spectral
-        stability requirement.
-        The unique remaining option compatible with (i) hyperbolicity of
-        $\sigma_2(\mathcal{L}_\Pi)$, (ii) finite characteristic cone,
-        (iii) the monotonic temporal ordering of Foundation~M §4.3, and (iv) the
-        bounded admissibility constraint of A4, is the Lorentzian signature
-        $(-,+,+,+)$.
-        The detailed argument is established in~\cite{BornInfeld} Sections~5--6,
-        which depend only on the bounded-flux constraint and spectral stability ---
-        both present in the Foundation~M axioms --- and not on any dynamical
-        substrate.
-      \end{proof}
+    The Lorentzian structure of Section~\ref{sec:metric} is defined in homogeneous and quasi-isotropic admissible
+    regimes.
+    A localised stationary obstruction to the admissibility flow breaks homogeneity and selects, via flux
+    conservation, a specific stationary exterior metric.
 
-    \subsection{Schwarzschild geometry from flux conservation}
+    \begin{theorem}[Schwarzschild from bounded admissibility, after~\cite{Beau2026c}]
+      \label{thm:schwarzschild}
+      Let the effective geometry of Section~\ref{sec:metric} be placed in the presence of a localised stationary
+      obstruction to the admissibility flow, with spherical symmetry and no additional microscopic scales.
+      Then the unique exterior stationary solution of the effective geometry induced by $\mathcal{L}_{\mathrm{eff}}$
+      is the Schwarzschild metric
+      \begin{equation}
+        \label{eq:schwarzschild}
+        ds^2 \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
+        + \left(1 - \frac{r_s}{r}\right)^{-1}\!dr^2
+        + r^2\,d\Omega^2,
+      \end{equation}
+      where $r_s$ is an integration constant characterising the strength of the obstruction.
+    \end{theorem}
 
-      \begin{theorem}[Schwarzschild from bounded admissibility,
-        after~\cite{BornInfeld}]
-        \label{thm:schwarzschild}
-        In the presence of a localised stationary obstruction to the admissibility
-        flow, with spherical symmetry and no additional microscopic scales, the unique
-        exterior stationary solution of the effective geometry induced by
-        $\mathcal{L}_\Pi$ is the Schwarzschild metric
-        \begin{equation}
-          \label{eq:schwarzschild}
-          ds^2
-          \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
-          + \left(1 - \frac{r_s}{r}\right)^{-1}dr^2
-          + r^2 d\Omega^2,
-        \end{equation}
-        where $r_s$ is an integration constant characterising the strength of the
-        obstruction.
-      \end{theorem}
+    \begin{proof}
+      In the exterior region, the homogeneous equation for the effective operator of Section~\ref{sec:q5b} under
+      spherical symmetry and stationarity reduces to the flux conservation equation
+      \begin{equation}
+        \label{eq:flux-conservation}
+        \frac{1}{r^2}\,\frac{d}{dr}\!\left(r^2 A^r(r)\,\frac{d\Phi}{dr}\right) \;=\; 0,
+      \end{equation}
+      expressing conservation of admissible flux through spheres of radius~$r$.
+      The general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay profile.
+      Via the operator-metric correspondence~\eqref{eq:metric-from-symbol}, this profile translates into the metric
+      coefficients $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
+      The parameter $r_s$ appears as the integration constant of~\eqref{eq:flux-conservation} and is identified
+      operationally via its influence on admissible propagation cones.
 
-      \begin{proof}
-        In the exterior region, the homogeneous equation for the effective
-        operator~\eqref{eq:continuum-op} under spherical symmetry reduces to
-        \begin{equation}
-          \frac{1}{r^2}\frac{d}{dr}\!\left(r^2 A^r(r)\frac{d\Phi}{dr}\right) = 0,
-        \end{equation}
-        expressing conservation of admissible flux through spheres of radius $r$.
-        The general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay
-        profile.
-        Via the operator-metric correspondence~\eqref{eq:metric-from-symbol}, this
-        profile translates to the metric coefficients $g_{tt} = -f(r)$,
-        $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
-        The parameter $r_s$ appears as the integration constant of the flux
-        conservation equation and is identified operationally via its influence on
-        admissible propagation cones.
-        This derivation requires only: (i) the bounded-flux constraint (A3--A4),
-        (ii) local injectivity of the projection in the exterior region,
-        (iii) spherical symmetry and stationarity, (iv) absence of additional
-        microscopic scales.
-        No independent metric field equations or energy-momentum tensor are postulated.
-        The detailed argument is established in~\cite{BornInfeld} Sections~6--8.
-      \end{proof}
+      The derivation uses only: (i) the bounded-flux constraint (A3\textendash A4 of~\cite{Beau2026m});
+      (ii) local injectivity of the projection in the exterior region; (iii) spherical symmetry and stationarity;
+      (iv) absence of additional microscopic scales.
+      No independent metric field equations or energy-momentum tensor are postulated.
+      The detailed argument is developed in~\cite{Beau2026c}~Sections~6\textendash 8 within the Born\textendash
+      Infeld dynamical picture; the present statement imports that content and reformulates it within the
+      Q5b geometric setting of Section~\ref{sec:q5b}.
+    \end{proof}
 
-      \begin{remark}[Horizon as projection degeneracy]
-        At $r = r_s$, the lapse function $f(r_s) = 0$.
-        In the present framework, this corresponds to a degeneracy of the principal
-        symbol $\sigma_2(\mathcal{L}_\Pi)$: the operator loses hyperbolicity and the
-        continuum chart ceases to be projectable.
-        The horizon is therefore not a physical singularity of the underlying
-        admissible structure --- it is the breakdown of the effective continuum
-        description.
-        This interpretation is consistent with the non-injectivity result
-        of~\cite{ENI}: at the horizon, distinct microscopic configurations become
-        maximally indistinguishable, maximising the projection entropy $S_\Pi$.
-      \end{remark}
+  \subsection{The horizon as a projection degeneracy}
+    \label{sec:horizon}
 
-    \subsection{Einstein equations as consistency conditions}
+    \begin{remark}[Horizon as projection degeneracy]
+      \label{rem:horizon}
+      At $r = r_s$, the lapse function satisfies $f(r_s) = 0$.
+      In the present framework, this corresponds to a degeneracy of the principal symbol
+      $\sigma_2(\mathcal{L}_{\mathrm{eff}})$ of~\eqref{eq:principal-symbol}: the operator loses hyperbolicity and the
+      continuum chart ceases to be projectable.
+      The horizon is therefore not a singularity of the underlying admissible structure --- it is the breakdown of
+      the effective continuum description.
+      This interpretation is consistent with the non-injectivity result of~\cite{Beau2026l}: at the horizon,
+      distinct microscopic admissible configurations become maximally indistinguishable, saturating the projection
+      entropy~$S_\Pi$.
+    \end{remark}
 
-      \begin{remark}[Einstein equations from the spectral entropy functional]
-        \label{rem:einstein}
-        The paper~\cite{Gravity} shows rigorously, via heat-kernel methods and zeta
-        regularisation, that the renormalized metric variation of the projective entropy
-        functional $S_\Pi[g] = \tfrac{1}{2}\log\det' \mathcal{L}_\Pi$ produces, in the
-        infrared-dominant two-derivative sector, a response proportional to the Einstein
-        tensor $G_{\mu\nu}$ via the heat-kernel mechanism of Sakharov-induced gravity.
-        The Einstein equations $G_{\mu\nu} = 8\pi T_{\mu\nu}$ therefore emerge as
-        consistency conditions of emergent geometry --- not as microscopic laws of the
-        admissible substrate.
-        In the language of the present paper: they express the balance between the
-        curvature of the projection-induced metric (encoding admissibility constraints)
-        and the energy-momentum content (encoding localised obstructions to the
-        admissibility flow).
-        The white paper~\cite{Cosmochrony} provides the broader programme context.
-      \end{remark}
+    \begin{remark}[Relation to the Gravity paper's horizon treatment]
+      \label{rem:gravity-horizon}
+      The spectral entropy functional $S_\Pi[g]$ of the Gravity paper~\cite{Beau2026h} is constructed on
+      Riemannian backgrounds via zeta-regularised heat-kernel methods; its extension to Lorentzian signature and to
+      horizon geometries is limited by the same symbol-degeneracy mechanism identified in
+      Remark~\ref{rem:horizon}.
+      The two descriptions do not compete: Remark~\ref{rem:horizon} provides a structural interpretation of a
+      limitation that is already implicit in the Lorentzian completion programme of~\cite{Beau2026h} and its
+      thermodynamic extension~\cite{Beau2026i}.
+    \end{remark}
+
+  \section{Einstein Equations as Consistency Conditions}
+  \label{sec:einstein}
+
+  The Schwarzschild metric~\eqref{eq:schwarzschild} is the unique stationary spherically symmetric exterior solution
+  of the effective geometry.
+  The transition from this specific solution to the general Einstein equations is the content of the Gravity
+  paper~\cite{Beau2026h}.
+
+  \begin{remark}[Einstein equations from the spectral entropy functional]
+    \label{rem:einstein}
+    The Gravity paper~\cite{Beau2026h} establishes, via heat-kernel methods and zeta regularisation on Riemannian
+    backgrounds, that the renormalised metric variation of the projective entropy functional
+    \begin{equation}
+      S_\Pi[g] \;=\; \tfrac{1}{2}\log\det{}'\mathcal{L}_\Pi
+    \end{equation}
+    produces, in the infrared-dominant two-derivative sector, a response proportional to the Einstein tensor
+    $G_{\mu\nu}$ via the heat-kernel mechanism of Sakharov-induced gravity.
+    The Einstein equations $G_{\mu\nu} = 8\pi G_N\,T_{\mu\nu}$ therefore emerge as consistency conditions of the
+    emergent geometry --- not as microscopic laws of the admissible substrate.
+    They express the balance between the curvature of the projection-induced metric (encoding admissibility
+    constraints) and the energy-momentum content (encoding localised obstructions to the admissibility flow, such
+    as the one giving~\eqref{eq:schwarzschild}).
+    The companion paper on spectral thermodynamics~\cite{Beau2026i} extends this construction to a local spectral
+    first law $\delta S_\Pi = \int \beta^{-1}\delta E_\Pi$.
+  \end{remark}
+
+  \begin{remark}[Chain closure]
+    \label{rem:chain}
+    The chain
+    \begin{equation}
+      \label{eq:chain}
+      \Pi_q
+      \;\xrightarrow{\text{Q5a}}\;
+      \mathcal{L}_\Pi
+      \;\xrightarrow{\text{Q5b}}\;
+      g^{\mu\nu}
+      \;\xrightarrow{\text{\cite{Beau2026h}}}\;
+      G_{\mu\nu}
+    \end{equation}
+    is now closed, conditionally on the hypotheses of Section~\ref{sec:status} and on the Riemannian restriction
+    of~\cite{Beau2026h}.
+    The present paper supplies the middle link: the identification of the symbol-extracted object of Q5b with the
+    metric appearing in the variational argument of~\cite{Beau2026h}.
+  \end{remark}
 
   \section{Open Directions}
-    \label{sec:open}
+  \label{sec:open}
 
-    \paragraph{Rigorous continuum limit.}
-      The convergence $\Pi_n \to \mathcal{L}_\Pi$ for the Heisenberg Cayley graph
-      $\mathrm{Cay}(G_q, S_q)$ in the $q \to \infty$ limit is established
-      conditionally in~\cite{Q5a}.
-      Closing the remaining hypotheses H1 and H2 and Conjecture~C would consolidate
-      the geometric results of the present paper.
+  \paragraph{Closing the hypotheses inherited from Q5a and Q5b.}
+    Rigorous proofs of Hypotheses~H1,~H-w,~H-E1, Conjecture~C (Q5a) and~[H-lift] (Q5b-O1) would remove all
+    conditionality from the results of the present paper.
+    Q5b-O1 is rated as moderate difficulty given Q5a Theorem~T2, and is the most immediately accessible of these.
 
-    \paragraph{Identification of $A$ from admissibility data.}
-      The constant $A > 0$ in the continuum Dirichlet form
-      $\mathcal{E}(f,g) = A\int \partial_\mu f\,\partial^\mu g\,d^4x$ must be
-      expressed in terms of the Born\textendash Infeld saturation constant $c_\chi$
-      and the BFS combinatorial data of $G_q$ (Q5a open problem~O5).
-      This identification closes the chain from the spectral data to the effective
-      Newton constant $G_N \sim 16\pi^2 \ell_{\mathrm{sp}}^2$ of~\cite{Gravity}.
+  \paragraph{Full $4 \times 4$ non-degenerate metric (Q5b-O2).}
+    Theorem~\ref{thm:schwarzschild} and Remark~\ref{rem:4d} concern only the non-degenerate part of the
+    sub-Riemannian symbol.
+    A complete treatment requires incorporating the central $Z$-direction via sub-principal corrections
+    (Beals\textendash Greiner calculus, or the tangent groupoid construction for sub-Riemannian spaces), which would
+    contribute a third spatial direction to the effective geometry.
+    This is Q5b-O2.
 
-    \paragraph{Coupling constants.}
-      The present paper identifies the admissible geometry.
-      It does not determine the numerical values of $G_N$ or observable cosmological
-      parameters.
-      These are expected to emerge from the quantitative spectral data of the O-series
-      via the transfer chain $c_\chi \to \delta_{\mathrm{pair}} \to \beta^* \approx 0.126$,
-      but the explicit identification is open.
+  \paragraph{Identification of $A_\tau$, $A_H$ from admissibility data (Q5b-O3).}
+    The tensor entries $A_\tau$ and $A_H$ of~\eqref{eq:principal-symbol} are not yet expressed in terms of the
+    Cosmochrony spectral data.
+    Closing this identification would require: expressing $A_H$ in terms of the Born\textendash Infeld saturation
+    constant $c_\chi$ and the spectral weight~$A$ of Q5a; and expressing $A_\tau$ in terms of the projective
+    temporal ordering data of~\cite{Beau2026pto}.
+    This is the first step toward an explicit metric from first principles and, through~\cite{Beau2026h}, toward a
+    quantitative determination of Newton's constant~$G_N$.
 
-    \paragraph{Cosmological implications.}
-      In homogeneous regimes, the admissibility flow gives a linear growth of
-      cumulative projected capacity $I(n)$, underlying the emergent Hubble law and
-      effective cosmological expansion~\cite{Cosmochrony}.
-      The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$
-      and the observable cosmological parameters ($H_0$, $w$) is an open quantitative
-      problem.
+  \paragraph{Cosmological implications.}
+    In homogeneous regimes, the admissibility flow gives a linear growth of cumulative projected capacity $I(n)$,
+    underlying the emergent Hubble law and effective cosmological expansion~\cite{Cosmochrony}.
+    The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
+    and the observable cosmological parameters ($H_0$, $w$) is an open quantitative problem.
 
   \section*{Acknowledgements}
 
-  The author acknowledges the use of large language models as a supportive tool for
-  refining language, structure, and internal consistency during the development of
-  this manuscript.
-  All conceptual contributions, theoretical choices, and interpretations remain the
-  sole responsibility of the author.
+  The author acknowledges the use of large language models as a supportive tool for refining language, structure,
+  and internal consistency during the development of this manuscript.
+  All conceptual contributions, theoretical choices, and interpretations remain the sole responsibility of the
+  author.
 
-  \begin{thebibliography}{99}
-
-    \bibitem{FoundationM}
-    J.~Beau,
-    ``Admissible Non-Injective Transitions as the Primitive of Physical Description,''
-    Cosmochrony companion paper~M, Zenodo (2026).
-    \doi{10.5281/zenodo.19616329}.
-
-    \bibitem{Q1}
-    J.~Beau,
-    ``Phase Coherence as an Admissibility Constraint:
-    Structural Derivation from Born\textendash Infeld Fibre Minimality,''
-    Cosmochrony companion paper~M2, Zenodo (2026).
-    \doi{10.5281/zenodo.XXXXXXXX}.
-
-    \bibitem{Q2}
-    J.~Beau,
-    ``Quantum Structure beyond Spin-$\tfrac{1}{2}$:
-    Co-Admissible Sectors and the Emergence of $\mathrm{SU}(2)$ as a Fixed Point,''
-    Cosmochrony companion paper~M3, Zenodo (2026).
-    \doi{10.5281/zenodo.XXXXXXXX}.
-
-    \bibitem{ENI}
-    J.~Beau,
-    ``Non-Injectivity as a Structural Necessity of Genuine Emergence,''
-    Cosmochrony companion paper~L, Zenodo (2026).
-    \doi{10.5281/zenodo.19391746}.
-
-    \bibitem{BornInfeld}
-    J.~Beau,
-    ``Bounded Relational Dynamics and the Structural Necessity of
-    Born\textendash Infeld Geometry,''
-    Cosmochrony companion paper~C, Zenodo (2026).
-    \doi{10.5281/zenodo.18407505}.
-
-    \bibitem{Cosmochrony}
-    J.~Beau,
-    ``Cosmochrony: A Pre-Geometric Relational Framework for Emergent Physics,''
-    white paper, Zenodo (2026).
-    \doi{10.5281/zenodo.17957509}.
-
-    \bibitem{Q5a}
-    J.~Beau,
-    ``Large-$q$ Limit of the Admissible Fibre:
-    Representational and Operator Convergence,''
-    Cosmochrony companion paper~Q5a, Zenodo (2026).
-    \doi{10.5281/zenodo.XXXXXXXX}.
-
-    \bibitem{Q6a}
-    J.~Beau,
-    ``Gauge Structure from Admissible Non-Injective Projection,''
-    Cosmochrony companion paper~M4a, Zenodo (2026).
-    \doi{10.5281/zenodo.XXXXXXXX}.
-
-    \bibitem{Gravity}
-    J.~Beau,
-    ``Infrared Einstein Response from a Renormalized Spectral Entropy Functional,''
-    Cosmochrony companion paper~H, Zenodo (2026).
-    \doi{10.5281/zenodo.XXXXXXXX}.
-
-    \bibitem{O12}
-    J.~Beau,
-    ``Weil Representation Spectral Capacity on Heisenberg Cayley Graphs,''
-    O12 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19243611}.
-
-    \bibitem{O23}
-    J.~Beau,
-    ``Three Stable Directions from Quaternionic Minimality,''
-    O23 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19375136}.
-
-    \bibitem{O24}
-    J.~Beau,
-    ``Vertical Non-Injectivity and the Stability of the Observable Rank,''
-    O24 spectral admissibility sub-programme paper, Zenodo (2026).
-    \doi{10.5281/zenodo.19386581}.
-
-  \end{thebibliography}
+  \clearpage
+  \bibliographystyle{cosmochrony}
+  \bibliography{cosmochrony-bibliography}
 
 \end{document}
