@@ -46,6 +46,9 @@ from Admissible Non-Injective Projection}
     Hilbert action derived rigorously from the spectral entropy functional in the Gravity
     paper~\cite{Beau2026h}.
     The present paper closes the chain $\Pi_q \to \mathcal{L}_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$.
+    Hypothesis~[H-lift], on which the results were originally conditional, has since been
+    proved in Q9~\cite{Beau2026q9}; the main geometric results are therefore unconditional
+    with respect to~[H-lift].
     No dynamical substrate is required at any step.
   \end{abstract}
 
@@ -79,8 +82,9 @@ from Admissible Non-Injective Projection}
     Q5b~\cite{Beau2026q5b} promotes this one-dimensional shadow to a four-dimensional effective geometry: the BFS
     shell stratification of $G_q$ converges, in the Gromov\textendash Hausdorff sense, to the
     Carnot\textendash Carath\'eodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$ with homogeneous dimension
-    $D_{\mathrm{hom}} = 4$, and under the lifting hypothesis~[H-lift] the principal symbol of the effective operator
-    extends to a Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
+    $D_{\mathrm{hom}} = 4$; the principal symbol of the effective operator extends to a
+    Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$
+    (under~[H-lift], proved in Q9~\cite{Beau2026q9}).
 
     The task of the present paper is to close the chain from this effective metric to the Einstein equations of
     general relativity.
@@ -95,8 +99,8 @@ from Admissible Non-Injective Projection}
     This paper derives the \emph{structure} of effective spacetime geometry from the admissibility framework.
     It does not derive the precise numerical value of Newton's constant $G_N$, nor does it prove the hypotheses
     inherited from Q5a and Q5b.
-    All results are therefore conditional on~[H-lift] (Q5b Hypothesis~4.1) and on the Q5a Mosco convergence
-    hypotheses.
+    All results were conditional on~[H-lift] (Q5b Hypothesis~4.1), which has since been proved
+    in Q9~\cite{Beau2026q9}, and on the Q5a Mosco convergence hypotheses.
     Open directions are collected in Section~\ref{sec:open}.
 
   \subsection*{Organisation}
@@ -163,8 +167,8 @@ from Admissible Non-Injective Projection}
       (Corwin\textendash Greenleaf, Folland, Stein).
       [H-lift] amounts to identifying the admissible restriction of $\mathcal{L}_\Pi$ with the image of the admissible
       sector of $\Delta_H$ under $d\pi_1$; its resolution is expected within this standard framework.
-      The hypothesis is listed as open (Q5b-O1) to reflect the fact that this identification has not yet been written
-      out explicitly, not that it involves a conceptual gap.
+      Hypothesis~[H-lift] has since been proved in Q9~\cite{Beau2026q9} via generator
+      suppression, confirming the kinetic-sector concentration unconditionally.
 
     \paragraph{From co-metric to effective metric.}
       \label{par:cometric-metric}
@@ -221,10 +225,10 @@ from Admissible Non-Injective Projection}
     \item Conjecture~C (Q5a): discrete Rellich compactness, numerically confirmed at the pair level for
     $q \leq 401$ via the O-series pipeline~\cite{Beau2026a16,Beau2026a28}.
     \item [H-lift] (Q5b~Definition~4.1): identification of $\mathcal{L}_\Pi$ as the kinetic sector of
-    $d\pi_1(\Delta_H)$.
+    $d\pi_1(\Delta_H)$ --- \textit{proved in Q9~\cite{Beau2026q9}}.
   \end{itemize}
-  Closing these hypotheses is the subject of open direction~Q5b-O1 (Section~\ref{sec:open}) and would remove all
-  conditionality from the results below.
+  With~[H-lift] now proved, the sole remaining conditionality stems from the Q5a Mosco
+  convergence hypotheses (H1, H-w, H-E1, Conjecture~C).
 
   \section{Effective Spacetime Geometry}
   \label{sec:geometry}
@@ -342,6 +346,7 @@ from Admissible Non-Injective Projection}
       thermodynamic extension~\cite{Beau2026i}.
     \end{remark}
 
+    \clearpage
   \section{Einstein Equations as Consistency Conditions}
   \label{sec:einstein}
 
@@ -387,30 +392,28 @@ from Admissible Non-Injective Projection}
     metric appearing in the variational argument of~\cite{Beau2026h}.
   \end{remark}
 
+  \clearpage
   \section{Open Directions}
   \label{sec:open}
 
-  \paragraph{Closing the hypotheses inherited from Q5a and Q5b.}
-    Rigorous proofs of Hypotheses~H1,~H-w,~H-E1, Conjecture~C (Q5a) and~[H-lift] (Q5b-O1) would remove all
-    conditionality from the results of the present paper.
-    Q5b-O1 is rated as moderate difficulty given Q5a Theorem~T2, and is the most immediately accessible of these.
+  \paragraph{Resolved directions.}
+    \textbf{Q5b-O1} ([H-lift]): proved in Q9~\cite{Beau2026q9} via generator suppression;
+    removes all conditionality on~[H-lift] from the present paper.
+    \textbf{Q5b-O2} (full $4\times 4$ metric): $A_z = 2$ established in Q8~\cite{BeauQ8}
+    via Casimir rigidity on $\mathrm{Sym}^2(V_\rho)$; the effective co-metric is
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\,2,\,2,\,2)$.
+    \textbf{Q5b-O3} (partial): $A_H = 2$ established by Q10~\cite{Beau2026q10} via
+    spectral universality~\cite{Beau2026u1}, confirmed numerically for
+    $q\in\{29,61,101,151,211\}$ (W1~\cite{Beau2026w1}).
 
-  \paragraph{Full $4 \times 4$ non-degenerate metric (Q5b-O2).}
-    Theorem~\ref{thm:schwarzschild} and Remark~\ref{rem:4d} concern only the non-degenerate part of the
-    sub-Riemannian symbol.
-    A complete treatment requires incorporating the central $Z$-direction via sub-principal corrections
-    (Beals\textendash Greiner calculus, or the tangent groupoid construction for sub-Riemannian spaces), which would
-    contribute a third spatial direction to the effective geometry.
-    This is Q5b-O2.
-
-  \paragraph{Identification of $A_\tau$, $A_H$ from admissibility data (Q5b-O3).}
-    The tensor entries $A_\tau$ and $A_H$ of~\eqref{eq:principal-symbol} are not yet expressed in terms of the
-    Cosmochrony spectral data.
-    Closing this identification would require: expressing $A_H$ in terms of the Born\textendash Infeld saturation
-    constant $c_\chi$ and the spectral weight~$A$ of Q5a; and expressing $A_\tau$ in terms of the projective
-    temporal ordering data of~\cite{Beau2026pto}.
-    This is the first step toward an explicit metric from first principles and, through~\cite{Beau2026h}, toward a
-    quantitative determination of Newton's constant~$G_N$.
+  \paragraph{Remaining open directions.}
+    \textbf{Q5b-O3} ($A_\tau$): the temporal coefficient $A_\tau$ in
+    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\,2,\,2,\,2)$ is the sole scalar not yet
+    expressed in terms of Cosmochrony spectral data; its identification from the
+    projective temporal ordering data of~\cite{Beau2026pto} would yield an explicit
+    metric and, through~\cite{Beau2026h}, a quantitative determination of~$G_N$.
+    \textbf{Closing Q5a hypotheses}: rigorous proofs of H1, H-w, H-E1, Conjecture~C
+    would remove all remaining conditionality from the results of this paper.
 
   \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
     The exclusion argument of Remark~\ref{rem:schwarzschild-uniqueness} rests on the structural claim that no
@@ -429,6 +432,7 @@ from Admissible Non-Injective Projection}
     The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
     and the observable cosmological parameters ($H_0$, $w$) is an open quantitative problem.
 
+    \clearpage
   \section*{Acknowledgements}
 
   The author acknowledges the use of large language models as a supportive tool for refining language, structure,
@@ -436,7 +440,6 @@ from Admissible Non-Injective Projection}
   All conceptual contributions, theoretical choices, and interpretations remain the sole responsibility of the
   author.
 
-  \clearpage
   \bibliographystyle{cosmochrony}
   \bibliography{cosmochrony-bibliography}
 
