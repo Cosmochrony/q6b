@@ -255,98 +255,114 @@ from Admissible Non-Injective Projection}
       central direction~$Z$ is the content of Q5b-O2.
     \end{remark}
 
+    \paragraph{Relation to Hamilton--Jacobi dynamics.}
+      Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal symbol of
+      $\mathcal{L}_{\mathrm{eff}}$ (equations~\eqref{eq:principal-symbol}--\eqref{eq:metric-from-symbol}),
+      the associated eikonal equation
+      \[
+        g^{\mu\nu}(x)\,\partial_\mu S\,\partial_\nu S \;=\; 0
+      \]
+      is precisely the Hamilton--Jacobi equation for massless propagation in the emergent effective geometry.
+      This identification belongs to the already projected geometric regime: it does not define admissibility
+      itself, but describes the characteristic propagation structure once the effective metric has been
+      reconstructed.
+      Hamilton--Jacobi theory should therefore be understood here as an effective reformulation of the
+      projected dynamics, not as a primitive layer of the framework.
+      The primitive admissibility relation constructs the effective configuration space on which the
+      Hamilton--Jacobi description subsequently becomes meaningful.
+
   \subsection{Schwarzschild geometry from flux conservation}
-    \label{sec:schwarzschild}
+  \label{sec:schwarzschild}
 
-    The Lorentzian structure of Section~\ref{sec:metric} is defined in homogeneous and quasi-isotropic admissible
-    regimes.
-    A localised stationary obstruction to the admissibility flow breaks homogeneity and selects, via flux
-    conservation, a specific stationary exterior metric.
+  The Lorentzian structure of Section~\ref{sec:metric} is defined in homogeneous and quasi-isotropic admissible
+  regimes.
+  A localised stationary obstruction to the admissibility flow breaks homogeneity and selects, via flux
+  conservation, a specific stationary exterior metric.
 
-    \begin{theorem}[Schwarzschild from bounded admissibility, after~\cite{Beau2026c}]
-      \label{thm:schwarzschild}
-      Let the effective geometry of Section~\ref{sec:metric} be placed in the presence of a localised stationary
-      obstruction to the admissibility flow, with spherical symmetry and no additional microscopic scales.
-      Then the unique exterior stationary solution of the effective geometry induced by $\mathcal{L}_{\mathrm{eff}}$
-      is the Schwarzschild metric
-      \begin{equation}
-        \label{eq:schwarzschild}
-        ds^2 \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
-        + \left(1 - \frac{r_s}{r}\right)^{-1}\!dr^2
-        + r^2\,d\Omega^2,
-      \end{equation}
-      where $r_s$ is an integration constant characterising the strength of the obstruction.
-    \end{theorem}
+  \begin{theorem}[Schwarzschild from bounded admissibility, after~\cite{Beau2026c}]
+    \label{thm:schwarzschild}
+    Let the effective geometry of Section~\ref{sec:metric} be placed in the presence of a localised stationary
+    obstruction to the admissibility flow, with spherical symmetry and no additional microscopic scales.
+    Then the unique exterior stationary solution of the effective geometry induced by $\mathcal{L}_{\mathrm{eff}}$
+    is the Schwarzschild metric
+    \begin{equation}
+      \label{eq:schwarzschild}
+      ds^2 \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
+      + \left(1 - \frac{r_s}{r}\right)^{-1}\!dr^2
+      + r^2\,d\Omega^2,
+    \end{equation}
+    where $r_s$ is an integration constant characterising the strength of the obstruction.
+  \end{theorem}
 
-    \begin{proof}
-      In the exterior region, the homogeneous equation for the effective operator of Section~\ref{sec:q5b} under
-      spherical symmetry and stationarity reduces to the flux conservation equation
-      \begin{equation}
-        \label{eq:flux-conservation}
-        \frac{1}{r^2}\,\frac{d}{dr}\!\left(r^2 A^r(r)\,\frac{d\Phi}{dr}\right) \;=\; 0,
-      \end{equation}
-      expressing conservation of admissible flux through spheres of radius~$r$.
-      The general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay profile.
-      Via the operator-metric correspondence~\eqref{eq:metric-from-symbol}, this profile translates into the metric
-      coefficients $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
-      The parameter $r_s$ appears as the integration constant of~\eqref{eq:flux-conservation} and is identified
-      operationally via its influence on admissible propagation cones.
+  \begin{proof}
+    In the exterior region, the homogeneous equation for the effective operator of Section~\ref{sec:q5b} under
+    spherical symmetry and stationarity reduces to the flux conservation equation
+    \begin{equation}
+      \label{eq:flux-conservation}
+      \frac{1}{r^2}\,\frac{d}{dr}\!\left(r^2 A^r(r)\,\frac{d\Phi}{dr}\right) \;=\; 0,
+    \end{equation}
+    expressing conservation of admissible flux through spheres of radius~$r$.
+    The general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay profile.
+    Via the operator-metric correspondence~\eqref{eq:metric-from-symbol}, this profile translates into the metric
+    coefficients $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
+    The parameter $r_s$ appears as the integration constant of~\eqref{eq:flux-conservation} and is identified
+    operationally via its influence on admissible propagation cones.
 
-      The derivation uses only: (i) the bounded-flux constraint (A3\textendash A4 of~\cite{Beau2026m});
-      (ii) local injectivity of the projection in the exterior region; (iii) spherical symmetry and stationarity;
-      (iv) absence of additional microscopic scales.
-      No independent metric field equations or energy-momentum tensor are postulated.
-      The detailed argument is developed in~\cite{Beau2026c}~Sections~6\textendash 8 within the Born\textendash
-      Infeld dynamical picture; the present statement imports that content and reformulates it within the
-      Q5b geometric setting of Section~\ref{sec:q5b}.
-    \end{proof}
+    The derivation uses only: (i) the bounded-flux constraint (A3\textendash A4 of~\cite{Beau2026m});
+    (ii) local injectivity of the projection in the exterior region; (iii) spherical symmetry and stationarity;
+    (iv) absence of additional microscopic scales.
+    No independent metric field equations or energy-momentum tensor are postulated.
+    The detailed argument is developed in~\cite{Beau2026c}~Sections~6\textendash 8 within the Born\textendash
+    Infeld dynamical picture; the present statement imports that content and reformulates it within the
+    Q5b geometric setting of Section~\ref{sec:q5b}.
+  \end{proof}
 
-    \begin{remark}[Uniqueness within the admissibility class]
-      \label{rem:schwarzschild-uniqueness}
-      The flux conservation equation~\eqref{eq:flux-conservation} determines the radial profile of the effective
-      metric only up to a class of spherically symmetric stationary solutions that a priori includes the
-      Schwarzschild\textendash de Sitter and Reissner\textendash Nordstr\"om deformations.
-      Each such deformation introduces an independent integration constant associated with an additional physical
-      scale --- a cosmological contribution in the first case, an electromagnetic charge in the second.
-      Within the present framework, these alternatives are not admitted: no scale beyond the Born\textendash Infeld
-      saturation constant~$c_\chi$ enters the admissibility structure of Foundation~M~\cite{Beau2026m}, and no
-      independent $U(1)$ charge is attached to the stationary obstruction in the exterior region used in
-      Theorem~\ref{thm:schwarzschild}.
-      The admissible exterior is therefore fixed, up to normalization, to the Schwarzschild form.
-      Uniqueness follows from the combined structural constraints of flux conservation and bounded admissibility,
-      not from symmetry alone.
-      A full structural exclusion of multi-scale deformations would require a separate analysis of admissibility
-      under additional scale parameters, which lies beyond the scope of the present paper.
-    \end{remark}
+  \begin{remark}[Uniqueness within the admissibility class]
+    \label{rem:schwarzschild-uniqueness}
+    The flux conservation equation~\eqref{eq:flux-conservation} determines the radial profile of the effective
+    metric only up to a class of spherically symmetric stationary solutions that a priori includes the
+    Schwarzschild\textendash de Sitter and Reissner\textendash Nordstr\"om deformations.
+    Each such deformation introduces an independent integration constant associated with an additional physical
+    scale --- a cosmological contribution in the first case, an electromagnetic charge in the second.
+    Within the present framework, these alternatives are not admitted: no scale beyond the Born\textendash Infeld
+    saturation constant~$c_\chi$ enters the admissibility structure of Foundation~M~\cite{Beau2026m}, and no
+    independent $U(1)$ charge is attached to the stationary obstruction in the exterior region used in
+    Theorem~\ref{thm:schwarzschild}.
+    The admissible exterior is therefore fixed, up to normalization, to the Schwarzschild form.
+    Uniqueness follows from the combined structural constraints of flux conservation and bounded admissibility,
+    not from symmetry alone.
+    A full structural exclusion of multi-scale deformations would require a separate analysis of admissibility
+    under additional scale parameters, which lies beyond the scope of the present paper.
+  \end{remark}
 
   \subsection{The horizon as a projection degeneracy}
-    \label{sec:horizon}
+  \label{sec:horizon}
 
-    \begin{remark}[Horizon as projection degeneracy]
-      \label{rem:horizon}
-      At $r = r_s$, the lapse function satisfies $f(r_s) = 0$.
-      In the present framework, this corresponds to a degeneracy of the principal symbol
-      $\sigma_2(\mathcal{L}_{\mathrm{eff}})$ of~\eqref{eq:principal-symbol}: the operator loses hyperbolicity and the
-      continuum chart ceases to be projectable.
-      The horizon is therefore not a singularity of the underlying admissible structure --- it is the breakdown of
-      the effective continuum description.
-      This interpretation is consistent with the non-injectivity result of~\cite{Beau2026l}: at the horizon,
-      distinct microscopic admissible configurations become maximally indistinguishable, saturating the projection
-      entropy~$S_\Pi$.
-    \end{remark}
+  \begin{remark}[Horizon as projection degeneracy]
+    \label{rem:horizon}
+    At $r = r_s$, the lapse function satisfies $f(r_s) = 0$.
+    In the present framework, this corresponds to a degeneracy of the principal symbol
+    $\sigma_2(\mathcal{L}_{\mathrm{eff}})$ of~\eqref{eq:principal-symbol}: the operator loses hyperbolicity and the
+    continuum chart ceases to be projectable.
+    The horizon is therefore not a singularity of the underlying admissible structure --- it is the breakdown of
+    the effective continuum description.
+    This interpretation is consistent with the non-injectivity result of~\cite{Beau2026l}: at the horizon,
+    distinct microscopic admissible configurations become maximally indistinguishable, saturating the projection
+    entropy~$S_\Pi$.
+  \end{remark}
 
-    \begin{remark}[Relation to the Gravity paper's horizon treatment]
-      \label{rem:gravity-horizon}
-      The spectral entropy functional $S_\Pi[g]$ of the Gravity paper~\cite{Beau2026h} is constructed on
-      Riemannian backgrounds via zeta-regularised heat-kernel methods; its extension to Lorentzian signature and to
-      horizon geometries is limited by the same symbol-degeneracy mechanism identified in
-      Remark~\ref{rem:horizon}.
-      The two descriptions do not compete: Remark~\ref{rem:horizon} provides a structural interpretation of a
-      limitation that is already implicit in the Lorentzian completion programme of~\cite{Beau2026h} and its
-      thermodynamic extension~\cite{Beau2026i}.
-    \end{remark}
+  \begin{remark}[Relation to the Gravity paper's horizon treatment]
+    \label{rem:gravity-horizon}
+    The spectral entropy functional $S_\Pi[g]$ of the Gravity paper~\cite{Beau2026h} is constructed on
+    Riemannian backgrounds via zeta-regularised heat-kernel methods; its extension to Lorentzian signature and to
+    horizon geometries is limited by the same symbol-degeneracy mechanism identified in
+    Remark~\ref{rem:horizon}.
+    The two descriptions do not compete: Remark~\ref{rem:horizon} provides a structural interpretation of a
+    limitation that is already implicit in the Lorentzian completion programme of~\cite{Beau2026h} and its
+    thermodynamic extension~\cite{Beau2026i}.
+  \end{remark}
 
-    \clearpage
+  \clearpage
   \section{Einstein Equations as Consistency Conditions}
   \label{sec:einstein}
 
@@ -390,6 +406,8 @@ from Admissible Non-Injective Projection}
     of~\cite{Beau2026h}.
     The present paper supplies the middle link: the identification of the symbol-extracted object of Q5b with the
     metric appearing in the variational argument of~\cite{Beau2026h}.
+    With Q8~\cite{BeauQ8}, Q10~\cite{Beau2026q10}, and Q11~\cite{Beau2026q11} now established, the effective
+    co-metric is fully explicit: $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
   \end{remark}
 
   \clearpage
@@ -399,19 +417,17 @@ from Admissible Non-Injective Projection}
   \paragraph{Resolved directions.}
     \textbf{Q5b-O1} ([H-lift]): proved in Q9~\cite{Beau2026q9} via generator suppression;
     removes all conditionality on~[H-lift] from the present paper.
-    \textbf{Q5b-O2} (full $4\times 4$ metric): $A_z = 2$ established in Q8~\cite{BeauQ8}
-    via Casimir rigidity on $\mathrm{Sym}^2(V_\rho)$; the effective co-metric is
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\,2,\,2,\,2)$.
-    \textbf{Q5b-O3} (partial): $A_H = 2$ established by Q10~\cite{Beau2026q10} via
+    \textbf{Q5b-O2} (horizontal sector): $A_H = 2$ established by Q10~\cite{Beau2026q10} via
     spectral universality~\cite{Beau2026u1}, confirmed numerically for
-    $q\in\{29,61,101,151,211\}$ (W1~\cite{Beau2026w1}).
+    $q\in\{29,61,101,151,211\}$ (W1~\cite{Beau2026w1});
+    and $A_z = 2$ established in Q8~\cite{BeauQ8} via Casimir rigidity on $\mathrm{Sym}^2(V_\rho)$.
+    \textbf{Q5b-O3} ($A_\tau = 2$): the temporal Casimir rigidity established in Q11~\cite{Beau2026q11}
+    fixes $A_\tau = 2$, closing the effective co-metric to
+    $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
+    The effective metric is therefore now fully determined in terms of Cosmochrony spectral data,
+    and through~\cite{Beau2026h} yields a structural determination of~$G_N$.
 
   \paragraph{Remaining open directions.}
-    \textbf{Q5b-O3} ($A_\tau$): the temporal coefficient $A_\tau$ in
-    $g^{\mu\nu} = \mathrm{diag}(-A_\tau,\,2,\,2,\,2)$ is the sole scalar not yet
-    expressed in terms of Cosmochrony spectral data; its identification from the
-    projective temporal ordering data of~\cite{Beau2026pto} would yield an explicit
-    metric and, through~\cite{Beau2026h}, a quantitative determination of~$G_N$.
     \textbf{Closing Q5a hypotheses}: rigorous proofs of H1, H-w, H-E1, Conjecture~C
     would remove all remaining conditionality from the results of this paper.
 
@@ -432,7 +448,18 @@ from Admissible Non-Injective Projection}
     The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
     and the observable cosmological parameters ($H_0$, $w$) is an open quantitative problem.
 
-    \clearpage
+  \paragraph{Relation to the spectral entropy programme.}
+    The present paper establishes the effective Lorentzian geometry associated with the admissibility operator
+    through its principal symbol.
+    The subsequent derivation of the Einstein tensor and the Yang\textendash Mills sector from the renormalised
+    spectral entropy functional
+    \[
+      S_\Pi[g,A] \;=\; \tfrac{1}{2}\log\det{}' A_{g,A}
+    \]
+    belongs to the companion spectral-variation programme developed in the Gravity
+    paper~\cite{Beau2026h}, Q12~\cite{Beau2026q12}, and Q13~\cite{Beau2026q13}, where the geometric and gauge
+    responses appear at successive Seeley\textendash DeWitt orders.
+
   \section*{Acknowledgements}
 
   The author acknowledges the use of large language models as a supportive tool for refining language, structure,
