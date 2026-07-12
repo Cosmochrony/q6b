@@ -1,5 +1,5 @@
 This repository contains the source of the **Q6b Cosmochrony paper**
-[*Effective Spacetime Geometry from Admissible Non-Injective Projection*](out/Q6b.pdf).
+*Effective Spacetime Geometry from Admissible Non-Injective Projection*.
 
 Q6b is the geometric companion to Q6a. While Q6a derives the gauge group from fibre
 invariants of the non-injective projection, Q6b analyses the base geometric structure —
@@ -88,7 +88,7 @@ make all geometric results of Q6b fully unconditional.
 
 - No background spacetime or metric postulated
 - No independent metric field equations (Einstein equations are derived, not assumed)
-- No free parameters beyond the Born–Infeld saturation constant $c_\chi$
+- No free parameters beyond the Born–Infeld saturation constant $c_{\mathrm{BI}}$
 - No energy-momentum tensor postulated (arises from localised obstructions)
 - No cosmological constant or charge added by hand
 - Hamilton–Jacobi formalism appears as an effective description, not as a primitive layer
