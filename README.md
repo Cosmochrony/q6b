@@ -1,5 +1,5 @@
 This repository contains the source of the **Q6b Cosmochrony paper**
-[*Effective Spacetime Geometry from Admissible Non-Injective Projection*](out/Q6b.pdf).
+*Effective Spacetime Geometry from Admissible Non-Injective Projection*.
 
 Q6b is the geometric companion to Q6a. While Q6a derives the gauge group from fibre
 invariants of the non-injective projection, Q6b analyses the base geometric structure —
