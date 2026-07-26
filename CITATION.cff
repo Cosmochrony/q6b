@@ -7,7 +7,7 @@ authors:
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/q6b"
 url: "https://cosmochrony.org/science/emergent-geometry/q6/b/"
-version: "1.2.1"
+version: "1.2.2"
 doi: "10.5281/zenodo.19744005"
 license: "CC-BY-4.0"
 preferred-citation:

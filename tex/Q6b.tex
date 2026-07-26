@@ -30,10 +30,10 @@ from Admissible Non-Injective Projection}
   \maketitle
 
   \begin{abstract}
-    Continuing from the gauge structure established in the companion paper Q6a~\cite{Beau2026q6a}, we derive effective
-    spacetime geometry from the admissibility framework of Foundation~M~\cite{Beau2026m} by importing the continuum
-    limit and geometric-extraction theorems of the companion paper Q5b~\cite{Beau2026q5b}.
-    Under the lifting hypothesis~[H-lift] of Q5b and the Mosco hypotheses of Q5a~\cite{Beau2026q5a}, the admissibility
+    Continuing from the gauge structure established in the companion paper Q6a, we derive effective
+    spacetime geometry from the admissibility framework of Foundation~M by importing the continuum
+    limit and geometric-extraction theorems of the companion paper Q5b.
+    Under the lifting hypothesis~[H-lift] of Q5b and the Mosco hypotheses of Q5a, the admissibility
     filter $\Pi_q$ converges to an effective operator $\mathcal{L}_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times
     \mathrm{Heis}_3(\mathbb{R})$ whose principal symbol defines a four-dimensional effective metric tensor
     $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature~$(-,+,+,+)$
@@ -44,12 +44,14 @@ from Admissible Non-Injective Projection}
     underlying admissible structure.
     The Einstein equations emerge as consistency conditions of the emergent geometry, with the Einstein\textendash
     Hilbert action derived rigorously from the spectral entropy functional in the Gravity
-    paper~\cite{Beau2026h}.
+    paper.
     The present paper closes the chain $\Pi_q \to \mathcal{L}_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$.
-    Hypothesis~[H-lift], on which the results were originally conditional, has since been
-    proved in Q9~\cite{Beau2026q9}; the main geometric results are therefore unconditional
-    with respect to~[H-lift].
+    Q9 proves hypothesis~[H-lift], so the main geometric results are unconditional with respect
+    to that hypothesis.
     No dynamical substrate is required at any step.
+    \textbf{Interpretive reading.}
+    The construction treats spacetime geometry as an effective propagation structure selected by
+    admissibility, rather than as primitive substrate data.
   \end{abstract}
 
   \paragraph{Keywords.}
@@ -244,6 +246,7 @@ from Admissible Non-Injective Projection}
 
     \begin{remark}[Nature of the effective four-dimensionality]
       \label{rem:4d}
+      \setlength{\emergencystretch}{1em}
       The effective four-dimensionality is not that of a non-degenerate pseudo-Riemannian manifold at the
       principal-symbol level.
       It arises from the homogeneous dimension $D_{\mathrm{hom}} = 4$ of the underlying Carnot structure (Q5b
@@ -387,8 +390,10 @@ from Admissible Non-Injective Projection}
     They express the balance between the curvature of the projection-induced metric (encoding admissibility
     constraints) and the energy-momentum content (encoding localised obstructions to the admissibility flow, such
     as the one giving~\eqref{eq:schwarzschild}).
-    The companion paper on spectral thermodynamics~\cite{Beau2026i} extends this construction to a local spectral
-    first law $\delta S_\Pi = \int \beta^{-1}\delta E_\Pi$.
+    The companion paper on spectral thermodynamics~\cite{Beau2026i} develops the variational side of this
+    construction and establishes that no local thermodynamic first law follows from it: the diagonal heat kernel
+    alone determines neither a physical temperature nor a heat density, an identification that would require both
+    an additional scale and an operational calibration law.
   \end{remark}
 
   \begin{remark}[Chain closure]
@@ -418,20 +423,26 @@ from Admissible Non-Injective Projection}
   \label{sec:open}
 
   \paragraph{Resolved directions.}
-    \textbf{Q5b-O1} ([H-lift]): proved in Q9~\cite{Beau2026q9} via generator suppression;
-    removes all conditionality on~[H-lift] from the present paper.
-    \textbf{Q5b-O2} (horizontal sector): $A_H = 2$ established by Q10~\cite{Beau2026q10} via
+    \textbf{Q5b-O1 ([H-lift]).}
+    Q9~\cite{Beau2026q9} proves this direction via generator suppression and removes all
+    conditionality on~[H-lift] from the present paper.
+
+    \textbf{Q5b-O2 (horizontal sector).}
+    Q10~\cite{Beau2026q10} establishes $A_H = 2$ via
     spectral universality~\cite{Beau2026u1}, confirmed numerically for
     $q\in\{29,61,101,151,211\}$ (W1~\cite{Beau2026w1});
     and $A_z = 2$ established in Q8~\cite{BeauQ8} via Casimir rigidity on $\mathrm{Sym}^2(V_\rho)$.
-    \textbf{Q5b-O3} ($A_\tau = 2$): the temporal Casimir rigidity established in Q11~\cite{Beau2026q11}
+
+    \textbf{Q5b-O3.}
+    The temporal Casimir rigidity established in Q11~\cite{Beau2026q11}
     fixes $A_\tau = 2$, closing the effective co-metric to
     $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
     The effective metric is therefore now fully determined in terms of Cosmochrony spectral data,
     and through~\cite{Beau2026h} yields a structural determination of~$G_N$.
 
   \paragraph{Remaining open directions.}
-    \textbf{Closing Q5a hypotheses}: rigorous proofs of H1, H-w, H-E1, Conjecture~C
+    \textbf{Closing the Q5a hypotheses.}
+    Rigorous proofs of H1, H-w, H-E1, and Conjecture~C
     would remove all remaining conditionality from the results of this paper.
 
   \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
@@ -462,6 +473,23 @@ from Admissible Non-Injective Projection}
     belongs to the companion spectral-variation programme developed in the Gravity
     paper~\cite{Beau2026h}, Q12~\cite{Beau2026q12}, and Q13~\cite{Beau2026q13}, where the geometric and gauge
     responses appear at successive Seeley\textendash DeWitt orders.
+
+  \section{Conclusion}
+  \label{sec:conclusion}
+
+    The admissibility continuum limit supplies an effective Lorentzian principal symbol under the
+    hypotheses stated in Section~\ref{sec:status}.
+    The Schwarzschild exterior and the Einstein response then enter through the geometric and
+    spectral-variation arguments identified above.
+    The variational construction does not by itself provide a local first law: the diagonal heat
+    kernel determines neither a physical temperature nor a heat density without an additional
+    operational scale and calibration law.
+
+    \paragraph{Interpretive outlook.}
+    The formal result supports treating spacetime geometry as an effective propagation structure
+    selected by admissibility.
+    It does not establish that geometry, thermodynamic temperature, and matter calibration emerge
+    from one local scalar datum; those bridges remain separate questions.
 
   \section*{Acknowledgements}
 
