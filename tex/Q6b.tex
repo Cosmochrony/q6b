@@ -16,6 +16,8 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
 
+\hyphenation{Schwarz-schild}
+
 \title{Effective Spacetime Geometry\\
 from Admissible Non-Injective Projection}
 
@@ -52,8 +54,8 @@ from Admissible Non-Injective Projection}
     extension, Lorentzian if diagonal with $A_z > 0$ under [H-hyp$_{\mathrm{red}}$]; a Lorentzian form of the
     Riemannian Gravity argument.
     \textbf{Interpretive reading.}
-    The construction treats spacetime geometry as an effective propagation structure selected by
-    admissibility, rather than as primitive substrate data.
+    The construction reads spacetime geometry as an effective propagation structure rather than as primitive
+    substrate data; it does not show that admissibility selects it.
   \end{abstract}
   \endgroup
 
@@ -118,11 +120,15 @@ from Admissible Non-Injective Projection}
     Every statement that needs a non-degenerate four-dimensional metric is further conditional on a supplied rank-four
     extension of the co-metric (open problem Q5b-O2).
     The Newtonian profile and the Schwarzschild form further need a supplied rank-four extension that is spherically
-    symmetric and asymptotically flat; Q5b provides none, and a left-invariant metric on $\mathrm{Heis}_3(\mathbb{R})$
-    is not flat (Q5b Remark~6.2).
-    For a static line element $-f_t\,dt^2 + f_r\,dr^2 + r^2\,d\Omega^2$, the Schwarzschild form also needs, as external
-    dynamical input, exterior homogeneity $A_r \equiv 1$, the closure $f_t f_r = 1$ and the exact temporal
-    identification $f_t = 1 + 2\Phi$ with $\Phi_0 = 0$~\cite{Beau2026c}.
+    symmetric and asymptotically flat.
+    Q5b provides none, and no left-invariant extension, in particular no diagonal one
+    $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$, qualifies: a left-invariant metric on $\mathrm{Heis}_3(\mathbb{R})$ is not
+    flat (Q5b Remark~6.2) and, being homogeneous, is not asymptotically flat.
+    Whether an extension that is not left-invariant has these properties, and how it would relate to the Carnot
+    structure of homogeneous dimension~$4$, is open.
+    For a static line element $-f_t\,dt^2 + f_r\,dr^2 + r^2\,d\Omega^2$, the Schwarzschild form also needs exterior
+    homogeneity $A_r \equiv 1$ as a hypothesis and, as external dynamical input, the closure $f_t f_r = 1$ and the
+    exact temporal identification $f_t = 1 + 2\Phi$ with $\Phi_0 = 0$~\cite{Beau2026c}.
     Open directions are collected in Section~\ref{sec:open}.
 
   \subsection*{Organisation}
@@ -140,8 +146,9 @@ from Admissible Non-Injective Projection}
   \subsection{What Q5a establishes, and the spatial limit hypothesis [H-L]}
     \label{sec:q5a}
 
-    Foundation~M~\cite{Beau2026m} supplies the relational group $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ and a
-    Heisenberg carrier for it: the Heisenberg\textendash Schr\"odinger representation $\pi_c$ on
+    Foundation~M~\cite{Beau2026m} takes two supplied inputs.
+    The first is the relational group $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$.
+    The second is a Heisenberg carrier for it, the Heisenberg\textendash Schr\"odinger representation $\pi_c$ on
     $\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})$ at a fixed non-trivial central character.
     Identifying the admissible fibre with $\mathcal{H}_c$ is a modelling dictionary rather than a theorem.
     The carrier is not selected by the admissibility axioms: together with Born\textendash Infeld parity they admit an
@@ -179,7 +186,8 @@ from Admissible Non-Injective Projection}
       \end{equation}
     \end{itemize}
     Q5b records that no source of~[H-L] is identified in the corpus, and that Q5a shows it to fail for the published
-    normalisation and for every common scalar rescaling of it on toric targets.
+    normalisation (for uniformly bounded weights) and for every common scalar rescaling of it on toric targets (under
+    [H-depth] and [H-$w'$]).
     Every statement of the present paper that consumes~\eqref{eq:Lpi-shadow} is conditional on~[H-L].
     The operator~\eqref{eq:Lpi-shadow} is one-dimensional; its relation to the homogeneous four-dimensional structure
     carried by $\mathrm{Heis}_3(\mathbb{R})$ is the content of Q5b, under the further hypothesis~[H-lift].
@@ -296,9 +304,9 @@ from Admissible Non-Injective Projection}
     \item A supplied rank-four extension of the co-metric~\eqref{eq:metric-from-symbol}, for every statement that
     needs a non-degenerate four-dimensional metric; its construction is the open problem Q5b-O2.
     \item For the exterior statements of Section~\ref{sec:schwarzschild}: an extension that is moreover spherically
-    symmetric and asymptotically flat, which Q5b does not provide, and, for the Schwarzschild form, the external
-    dynamical input of~\cite{Beau2026c} (exterior homogeneity, the closure $f_t f_r = 1$ and the exact temporal
-    identification).
+    symmetric and asymptotically flat, which Q5b does not provide and which no left-invariant extension is.
+    For the Schwarzschild form, exterior homogeneity $A_r \equiv 1$ is assumed in addition, together with the
+    external dynamical input of~\cite{Beau2026c}: the closure $f_t f_r = 1$ and the exact temporal identification.
   \end{itemize}
   The supplied Heisenberg carrier of Section~\ref{sec:q5a} is a modelling input throughout.
   The results of Q5a recalled in Section~\ref{sec:q5a}, which carry their own hypotheses, and the Carnot convergence
@@ -313,7 +321,8 @@ from Admissible Non-Injective Projection}
     Under the hypotheses of Section~\ref{sec:status}, Q5b Theorem~5.2 gives the rank-three
     co-metric~\eqref{eq:metric-from-symbol}, and Q5b Theorem~6.1 gives the signature $(-,+,+)$ of its non-degenerate
     block under~[H-hyp$_{\mathrm{red}}$].
-    A four-dimensional Lorentzian metric $g_{\mu\nu}$ is available only for a supplied rank-four extension (Q5b-O2);
+    A four-dimensional Lorentzian metric $g_{\mu\nu}$ is available only for a supplied rank-four extension that is
+    Lorentzian, for instance diagonal with $A_z > 0$ under~[H-hyp$_{\mathrm{red}}$] (Q5b-O2);
     the statements below that use one are conditional on that supply.
     The co-metric is defined on the effective continuum $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ and
     encodes how admissible modes would propagate in the continuum limit posited by~[H-L].
@@ -366,7 +375,7 @@ from Admissible Non-Injective Projection}
     localised stationary obstruction, is spherically symmetric and asymptotically flat, so that the exterior operator
     takes the radial form $\nabla_\mu\bigl(A^{\mu\nu}(r)\nabla_\nu\bigr)$ with
     $A^{\mu\nu}(r) = \mathrm{diag}\bigl(-A_t(r), A_r(r), A_\perp(r), A_\perp(r)\bigr)$.
-    Q5b provides no such extension.
+    Q5b provides no such extension, and no left-invariant extension of~\eqref{eq:metric-from-symbol} is one.
     \begin{enumerate}
       \item[(i)] \emph{Newtonian exterior.}
       If the exterior is asymptotically homogeneous, $A_r(r) \to 1$, a stationary probe $\Phi$ obeying flux
@@ -413,8 +422,10 @@ from Admissible Non-Injective Projection}
     Flux conservation does not single out the Schwarzschild form: the closure of
     Proposition~\ref{thm:schwarzschild}(ii) is input.
     Stationary spherically symmetric exteriors such as the Schwarzschild\textendash de Sitter and
-    Reissner\textendash Nordstr\"om families carry further integration constants, associated with additional scales.
-    No premise available here excludes them.
+    Reissner\textendash Nordstr\"om families also satisfy the closure, and carry a further parameter (a cosmological
+    constant, a charge) associated with an additional scale.
+    Within Proposition~\ref{thm:schwarzschild}(ii) they are excluded only by the supplied inputs, exterior homogeneity
+    and the exact temporal identification $f_t = 1 + 2\Phi$; no premise derived here excludes them.
     In particular, a single-scale rigidity of the admissibility structure is not established, and the geometric
     sector already carries independent scales: a full-rank extension of the co-metric carries a length scale
     (Q5b Remark~5.5), the temporal step is a free datum (Q11~\cite{Beau2026q11}), and the Einstein and cosmological
@@ -471,7 +482,8 @@ from Admissible Non-Injective Projection}
     when the renormalised higher-derivative ratios are small.
     Identifying $A_g$ with the effective operator of the present paper would require the supplied rank-four extension
     and a Lorentzian formulation, neither of which is available.
-    The companion paper~\cite{Beau2026Thermodynamics} shows that, assuming a renormalised infrared metric response and
+    The companion paper~\cite{Beau2026Thermodynamics}, also working on a Riemannian four-manifold, shows that, assuming
+    a renormalised infrared metric response and
     an effective matter functional $W_\Pi$, stationarity of $\Gamma_\Pi = S_\Pi^{\mathrm{ren}} - W_\Pi$ is equivalent,
     at leading infrared order, to $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$.
     It also shows that no local first law follows from the heat kernel alone: the diagonal heat kernel determines
@@ -508,7 +520,7 @@ from Admissible Non-Injective Projection}
     The fourth is the variational argument of~\cite{Beau2026h}, which is performed on Riemannian backgrounds and whose
     Einstein coefficient is a matching datum; applying it to the Lorentzian metric of the third arrow requires a
     Lorentzian formulation that is not supplied, and the field equations need in addition the effective matter
-    functional of~\cite{Beau2026Thermodynamics}.
+    functional of~\cite{Beau2026Thermodynamics}, also stated on Riemannian backgrounds.
     The present paper does not supply the third arrow: identifying the rank-three object of Q5b with the metric of the
     variational argument of~\cite{Beau2026h} requires that extension.
     No value of the co-metric coefficients is established (Section~\ref{par:cometric-metric}).
@@ -549,8 +561,8 @@ from Admissible Non-Injective Projection}
     single-scale rigidity of the admissibility structure is not available as a premise.
 
   \paragraph{Cosmological regime.}
-    In homogeneous regimes, the admissibility flow gives a linear growth of cumulative projected capacity $I(n)$,
-    underlying the emergent Hubble law and effective cosmological expansion~\cite{Cosmochrony}.
+    In homogeneous regimes, the white paper~\cite{Cosmochrony} relates a linear growth of cumulative projected capacity
+    $I(n)$ to the emergent Hubble law and effective cosmological expansion; that relation is not examined here.
     The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
     and the observable cosmological parameters ($H_0$, $w$) is an open quantitative problem.
 
