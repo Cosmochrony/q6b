@@ -1,18 +1,18 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "Effective Spacetime Geometry from Admissible Non-Injective Projection"
+title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior"
 type: software
 authors:
   - family-names: "Beau"
     given-names: "Jérôme"
 repository-code: "https://github.com/Cosmochrony/q6b"
 url: "https://cosmochrony.org/science/emergent-geometry/q6/b/"
-version: "1.2.2"
+version: "2.0"
 doi: "10.5281/zenodo.19744005"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "Effective Spacetime Geometry from Admissible Non-Injective Projection"
+  title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"
