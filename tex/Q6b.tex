@@ -42,18 +42,15 @@ from Admissible Non-Injective Projection}
     $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ (Q5b Theorem~5.2), whose non-degenerate block has signature $(-,+,+)$, with
     stipulated signs, under the hyperbolicity hypothesis [H-hyp$_{\mathrm{red}}$] (Q5b Theorem~6.1); the signature
     $(-,+,+,+)$ needs a supplied rank-four extension (open problem Q5b-O2).
-    In the presence of a localised stationary obstruction to the admissibility flow with spherical symmetry, flux
-    conservation within this effective geometry forces the Schwarzschild metric as the unique stationary exterior
-    solution, with the horizon appearing as a degeneracy of the principal symbol rather than as a singularity of the
-    underlying admissible structure.
-    The Einstein equations emerge as consistency conditions of the emergent geometry, with the Einstein\textendash
-    Hilbert action derived rigorously from the spectral entropy functional in the Gravity
-    paper.
+    For a supplied rank-four extension, flux conservation around a localised stationary spherically symmetric
+    obstruction gives the Newtonian profile $\Phi_0 - C/r$; the Schwarzschild form needs external dynamical input
+    (the closure $f_t f_r = 1$ and an exact temporal identification), and the horizon reading is interpretive.
+    On Riemannian backgrounds, the Einstein coefficient of the Gravity paper is a matching datum.
     Each arrow of the chain $\Pi_q \xrightarrow{[\mathrm{H\text{-}L}]} \mathcal{L}_\Pi
     \xrightarrow{[\mathrm{H\text{-}lift}]} g^{\mu\nu}_{(3)} \xrightarrow{\text{Q5b-O2}} g^{\mu\nu} \to G_{\mu\nu}$
-    carries its own condition; the last needs a Lorentzian form of the Gravity paper's Riemannian argument and a
-    matched Einstein coefficient.
-    No dynamical substrate is required at any step.
+    carries its own condition: the posited limit; the open lifting hypothesis, with a stipulated temporal term; a
+    supplied extension, Lorentzian if diagonal with $A_z > 0$ under [H-hyp$_{\mathrm{red}}$]; and a Lorentzian form of
+    the Riemannian Gravity argument.
     \textbf{Interpretive reading.}
     The construction treats spacetime geometry as an effective propagation structure selected by
     admissibility, rather than as primitive substrate data.
@@ -100,11 +97,12 @@ from Admissible Non-Injective Projection}
 
     The task of the present paper is to examine how this conditional geometry connects to the Einstein equations of
     general relativity, and under which further inputs.
-    Three results are obtained: (i) the Schwarzschild metric as the unique stationary, spherically symmetric
-    exterior solution compatible with the admissibility flow (§\ref{sec:schwarzschild}); (ii) a structural
-    interpretation of the horizon as a projection degeneracy (§\ref{sec:horizon}); (iii) the identification of the
-    Einstein equations as consistency conditions of the emergent geometry, via the spectral entropy functional of the
-    Gravity paper~\cite{Beau2026h} (§\ref{sec:einstein}).
+    Three conditional statements are discussed, each requiring a supplied rank-four extension of the co-metric:
+    (i) the stationary, spherically symmetric exterior of a localised obstruction, where flux conservation gives the
+    Newtonian profile and the Schwarzschild form needs the closure $f_t f_r = 1$ and an exact temporal identification
+    as external dynamical input~\cite{Beau2026c} (§\ref{sec:schwarzschild}); (ii) an interpretive reading of the
+    horizon (§\ref{sec:horizon}); (iii) the relation to the Einstein equations through the spectral entropy functional
+    of the Gravity paper~\cite{Beau2026h}, whose Einstein coefficient is a matching datum (§\ref{sec:einstein}).
 
   \subsection*{What is and is not derived in this paper}
 
@@ -118,14 +116,16 @@ from Admissible Non-Injective Projection}
     Theorem~6.1).
     Every statement that needs a non-degenerate four-dimensional metric is further conditional on a supplied rank-four
     extension of the co-metric (open problem Q5b-O2).
+    The Schwarzschild form is further conditional on the closure $f_t f_r = 1$ and an exact temporal identification,
+    supplied as external dynamical input~\cite{Beau2026c}.
     Open directions are collected in Section~\ref{sec:open}.
 
   \subsection*{Organisation}
 
     Section~\ref{sec:continuum} reviews the Q5a\textendash Q5b geometric chain and collects the theorems used as
     inputs.
-    Section~\ref{sec:geometry} restates the conditional effective co-metric and its signature, establishes the
-    Schwarzschild exterior solution, and interprets the horizon.
+    Section~\ref{sec:geometry} restates the conditional effective co-metric and its signature, states the
+    conditional Schwarzschild exterior, and interprets the horizon.
     Section~\ref{sec:einstein} discusses the conditional connection to the Einstein equations.
     Section~\ref{sec:open} identifies the open directions.
 
@@ -151,10 +151,11 @@ from Admissible Non-Injective Projection}
     Q5a~\cite{Beau2026q5a} determines what the canonical filtration converges to:
     \begin{itemize}
       \item[(Q5a-1)] with the pipeline's initial vector, the filtration stage $\Omega_n$ is exactly the toric Fourier
-      window $\mathrm{span}\{e^{2\pi i b x/q} : |b| \le n\}$ (Q5a Theorem~3.1);
+      window $\mathrm{span}\{e^{2\pi i b x/q} : |b| \le \min(n, (q-1)/2)\}$ (Q5a Theorem~3.1);
       \item[(Q5a-2)] if the admissibility weights are uniformly bounded, the published admissibility forms tend to zero
-      on the filtration stages at rate $q^{-2}$, uniformly on norm-bounded sets, and their Mosco limit is the zero form
-      (Q5a Theorem~5.1);
+      on the filtration stages at rate $q^{-2}$, uniformly on norm-bounded sets, and their Mosco limit, along any
+      isometric identification of the stages with subspaces of a fixed Hilbert space whose ranges have asymptotically
+      dense union, is the zero form (Q5a Theorem~5.1);
       \item[(Q5a-3)] under Hypotheses~[H-depth] (diverging saturation depth) and~[H-$w'$] (positive finite limits of the
       modulation and translation weights), no common scalar normalisation of the forms produces, on toric targets, a
       limit containing both a finite derivative term and the modulation sector (Q5a Theorem~6.1).
@@ -221,7 +222,7 @@ from Admissible Non-Injective Projection}
         \label{eq:principal-symbol}
         \sigma_2(\mathcal{L}_{\mathrm{eff}})(x, k) \;=\; A^{\mu\nu}(x)\,k_\mu k_\nu,
       \end{equation}
-      where $A^{\mu\nu}$ is a symmetric contravariant tensor on the cotangent bundle $T^*M$ with entries $A_\tau$ in
+      where $A^{\mu\nu}$ is a symmetric contravariant tensor on the cotangent bundle $T^*M$ with entries $-A_\tau$ in
       the temporal sector and $A_H$ in the horizontal sector.
       The principal symbol is \emph{degenerate}: at the sub-Riemannian level inherited from Q5b, $A^{\mu\nu}$ has a
       null direction along the central generator~$Z$ of $\mathrm{Heis}_3(\mathbb{R})$, reflecting the horizontal-only
@@ -285,6 +286,8 @@ from Admissible Non-Injective Projection}
     [K] and [R] without discharging it.
     \item {[H-hyp$_{\mathrm{red}}$]} (Q5b Theorem~6.1): hyperbolicity of the reduced operator $L_{\mathrm{red}}$; an
     explicit hypothesis, not derived from the capacity bound.
+    \item The stipulated temporal term $-A_\tau\partial_\tau^2$ of $\mathcal{L}_{\mathrm{eff}}$, on the product
+    $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$, which is a modelling choice of Q5b.
     \item A supplied rank-four extension of the co-metric~\eqref{eq:metric-from-symbol}, for every statement that
     needs a non-degenerate four-dimensional metric; its construction is the open problem Q5b-O2.
   \end{itemize}
@@ -304,7 +307,7 @@ from Admissible Non-Injective Projection}
     A four-dimensional Lorentzian metric $g_{\mu\nu}$ is available only for a supplied rank-four extension (Q5b-O2);
     the statements below that use one are conditional on that supply.
     The co-metric is defined on the effective continuum $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ and
-    governs the propagation of admissible modes in the continuum limit of the projection.
+    encodes how admissible modes would propagate in the continuum limit posited by~[H-L].
 
     \begin{remark}[Nature of the effective four-dimensionality]
       \label{rem:4d}
@@ -328,8 +331,8 @@ from Admissible Non-Injective Projection}
       \[
         g^{\mu\nu}(x)\,\partial_\mu S\,\partial_\nu S \;=\; 0
       \]
-      is precisely the Hamilton--Jacobi equation for massless propagation in the emergent
-      effective geometry~\cite{Arnold1989}.
+      is the characteristic (eikonal) equation of $\mathcal{L}_{\mathrm{eff}}$; for a supplied rank-four extension it
+      is the Hamilton--Jacobi equation for massless propagation in the effective geometry~\cite{Arnold1989}.
       This identification belongs to the already projected geometric regime: it does not define admissibility
       itself, but describes the characteristic propagation structure once the effective co-metric has been
       reconstructed.
@@ -343,8 +346,8 @@ from Admissible Non-Injective Projection}
 
   The signature statement of Section~\ref{sec:metric} holds in homogeneous and quasi-isotropic admissible
   regimes.
-  A localised stationary obstruction to the admissibility flow breaks homogeneity and selects, via flux
-  conservation, a specific stationary exterior metric.
+  A localised stationary obstruction to the admissibility flow breaks homogeneity; for a supplied rank-four extension,
+  flux conservation gives a Newtonian radial profile, and a stationary exterior metric needs further dynamical input.
 
   \begin{theorem}[Schwarzschild from bounded admissibility, after~\cite{Beau2026c}]
     \label{thm:schwarzschild}
@@ -370,8 +373,9 @@ from Admissible Non-Injective Projection}
     \end{equation}
     expressing conservation of admissible flux through spheres of radius~$r$.
     The general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay profile.
-    Via the operator-metric correspondence~\eqref{eq:metric-from-symbol}, this profile translates into the metric
-    coefficients $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
+    Via a supplied rank-four extension of~\eqref{eq:metric-from-symbol}, and with the closure $f_t f_r = 1$ as external
+    input, this profile translates into the metric coefficients $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with
+    $f(r) = 1 - r_s/r$.
     The parameter $r_s$ appears as the integration constant of~\eqref{eq:flux-conservation} and is identified
     operationally via its influence on admissible propagation cones.
 
@@ -497,20 +501,6 @@ from Admissible Non-Injective Projection}
   \section{Open Directions}
   \label{sec:open}
 
-  \paragraph{Resolved directions.}
-    \textbf{Q5b-O2 (horizontal sector).}
-    Q10~\cite{Beau2026q10} establishes $A_H = 2$ via
-    spectral universality~\cite{Beau2026u1}, confirmed numerically for
-    $q\in\{29,61,101,151,211\}$ (W1~\cite{Beau2026w1});
-    and $A_z = 2$ established in Q8~\cite{BeauQ8} via Casimir rigidity on $\mathrm{Sym}^2(V_\rho)$.
-
-    \textbf{Q5b-O3.}
-    The temporal Casimir rigidity established in Q11~\cite{Beau2026q11}
-    fixes $A_\tau = 2$, closing the effective co-metric to
-    $g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2)$.
-    The effective metric is therefore now fully determined in terms of Cosmochrony spectral data,
-    and through~\cite{Beau2026h} yields a structural determination of~$G_N$.
-
   \paragraph{Remaining open directions.}
     \textbf{Establishing or replacing [H-L].}
     No source of the spatial limit operator~\eqref{eq:Lpi-shadow} is identified in the corpus.
@@ -519,6 +509,19 @@ from Admissible Non-Injective Projection}
 
     \textbf{Q5b-O1 ([H-lift]).}
     Open; Q9~\cite{Beau2026q9} gives sufficient conditions for a kinetic Mosco limit and does not discharge it.
+
+    \textbf{Q5b-O2 (full-rank extension).}
+    Open.
+    The Heisenberg commutator supplies no central coefficient (Q8~\cite{BeauQ8}, Proposition~3.1), and a full-rank
+    extension requires a new operator containing a central term of homogeneous degree four, together with the length
+    scale that such a term carries (Q5b Remark~5.5).
+    No value of a central coefficient $A_z$ is established.
+
+    \textbf{Q5b-O3 (coefficient values).}
+    Open.
+    No value of $A_\tau$ or $A_H$ is established: Q5b~\cite{Beau2026q5b} records that Q10 derives no value of $A_H$,
+    that Q8 shows invariance to leave the common value of an isotropic form free, and that Q11 shows spatial
+    $\mathrm{SU}(2)$ invariance to leave $A_\tau$ independent of the spatial coefficients.
 
   \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
     The exclusion argument of Remark~\ref{rem:schwarzschild-uniqueness} rests on the structural claim that no
@@ -556,8 +559,8 @@ from Admissible Non-Injective Projection}
     Under~[H-L], [H-lift] and~[H-hyp$_{\mathrm{red}}$], the posited continuum operator has a rank-three principal
     symbol whose non-degenerate block is Lorentzian; a four-dimensional Lorentzian metric requires a supplied
     extension (Q5b-O2).
-    The Schwarzschild exterior and the Einstein response then enter through the geometric and
-    spectral-variation arguments identified above.
+    For a supplied rank-four extension, the Newtonian exterior profile follows from flux conservation, while the
+    Schwarzschild form and the Einstein response need external dynamical input and matching data respectively.
     The variational construction does not by itself provide a local first law: the diagonal heat
     kernel determines neither a physical temperature nor a heat density without an additional
     operational scale and calibration law.
