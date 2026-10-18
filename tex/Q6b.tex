@@ -350,7 +350,7 @@ from Admissible Non-Injective Projection}
       The primitive admissibility relation constructs the effective configuration space on which the
       Hamilton--Jacobi description subsequently becomes meaningful.
 
-  \subsection{Schwarzschild geometry from flux conservation}
+  \subsection{Newtonian exterior, conditional Schwarzschild form}
   \label{sec:schwarzschild}
 
   The signature statement of Section~\ref{sec:metric} holds in homogeneous and quasi-isotropic admissible
@@ -360,66 +360,69 @@ from Admissible Non-Injective Projection}
   provide, flux conservation gives a Newtonian radial profile, and a stationary exterior metric needs further
   dynamical input.
 
-  \begin{theorem}[Schwarzschild from bounded admissibility, after~\cite{Beau2026c}]
+  \begin{proposition}[Newtonian exterior and conditional Schwarzschild form, after~\cite{Beau2026c}]
     \label{thm:schwarzschild}
-    Let the effective geometry of Section~\ref{sec:metric} be placed in the presence of a localised stationary
-    obstruction to the admissibility flow, with spherical symmetry and no additional microscopic scales.
-    Then the unique exterior stationary solution of the effective geometry induced by $\mathcal{L}_{\mathrm{eff}}$
-    is the Schwarzschild metric
-    \begin{equation}
-      \label{eq:schwarzschild}
-      ds^2 \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
-      + \left(1 - \frac{r_s}{r}\right)^{-1}\!dr^2
-      + r^2\,d\Omega^2,
-    \end{equation}
-    where $r_s$ is an integration constant characterising the strength of the obstruction.
-  \end{theorem}
+    Assume a supplied rank-four extension of the co-metric~\eqref{eq:metric-from-symbol} which, in the exterior of a
+    localised stationary obstruction, is spherically symmetric and asymptotically flat, so that the exterior operator
+    takes the radial form $\nabla_\mu\bigl(A^{\mu\nu}(r)\nabla_\nu\bigr)$ with
+    $A^{\mu\nu}(r) = \mathrm{diag}\bigl(-A_t(r), A_r(r), A_\perp(r), A_\perp(r)\bigr)$.
+    Q5b provides no such extension.
+    \begin{enumerate}
+      \item[(i)] \emph{Newtonian exterior.}
+      If the exterior is asymptotically homogeneous, $A_r(r) \to 1$, a stationary probe $\Phi$ obeying flux
+      conservation has the leading exterior profile $\Phi(r) = \Phi_0 - C/r$, with $C$ an integration constant
+      measuring the strength of the obstruction.
+      \item[(ii)] \emph{Schwarzschild form, under additional input.}
+      If moreover $A_r \equiv 1$ in the exterior, and the static line element
+      $-f_t\,dt^2 + f_r\,dr^2 + r^2\,d\Omega^2$ is subject to the closure $f_t f_r = 1$ and to the exact temporal
+      identification $f_t = 1 + 2\Phi$ with $\Phi_0 = 0$, both supplied as external dynamical input, then the exterior
+      is the Schwarzschild metric
+      \begin{equation}
+        \label{eq:schwarzschild}
+        ds^2 \;=\; -\!\left(1 - \frac{r_s}{r}\right)dt^2
+        + \left(1 - \frac{r_s}{r}\right)^{-1}\!dr^2
+        + r^2\,d\Omega^2,
+        \qquad r_s = 2C
+      \end{equation}
+      in relational units.
+      With the weak-field identification alone, this form holds only to leading order in $C/r$.
+    \end{enumerate}
+    Neither the extension nor the input of~(ii) is derived in the present paper.
+  \end{proposition}
 
   \begin{proof}
-    In the exterior region, the homogeneous equation for the effective operator of Section~\ref{sec:q5b} under
-    spherical symmetry and stationarity reduces to the flux conservation equation
+    Under the stated hypotheses, the exterior equation $\nabla_\mu(A^{\mu\nu}\nabla_\nu\Phi) = 0$ for a stationary
+    probe reduces to radial flux conservation through spheres of radius~$r$,
     \begin{equation}
       \label{eq:flux-conservation}
-      \frac{1}{r^2}\,\frac{d}{dr}\!\left(r^2 A^r(r)\,\frac{d\Phi}{dr}\right) \;=\; 0,
+      \frac{1}{r^2}\,\frac{d}{dr}\!\left(r^2 A_r(r)\,\frac{d\Phi}{dr}\right) \;=\; 0,
+      \qquad\text{that is,}\qquad r^2 A_r(r)\,\frac{d\Phi}{dr} = C.
     \end{equation}
-    expressing conservation of admissible flux through spheres of radius~$r$.
-    Under exterior homogeneity $A^r \equiv 1$, the general solution is $\Phi(r) = \Phi_0 - C/r$, giving a $1/r$ decay
-    profile.
-    Via a supplied rank-four extension of~\eqref{eq:metric-from-symbol} that is spherically symmetric and
-    asymptotically flat, and with the closure $f_t f_r = 1$ and the exact temporal identification $f_t = 1 + 2\Phi$,
-    $\Phi_0 = 0$, as external input~\cite{Beau2026c}, this profile translates into the metric coefficients
-    $g_{tt} = -f(r)$ and $g_{rr} = f(r)^{-1}$ with $f(r) = 1 - r_s/r$.
-    The parameter $r_s$ appears as the integration constant of~\eqref{eq:flux-conservation} and is identified
-    operationally via its influence on admissible propagation cones.
-
-    The derivation uses only: (i) the bounded-flux constraint (A3\textendash A4 of~\cite{Beau2026m});
-    (ii) local injectivity of the projection in the exterior region; (iii) spherical symmetry and stationarity;
-    (iv) absence of additional microscopic scales.
-    No independent metric field equations or energy-momentum tensor are postulated.
-    The detailed argument is developed in~\cite{Beau2026c}~Sections~6\textendash 8 within the Born\textendash
-    Infeld dynamical picture; the present statement imports that content and reformulates it within the
-    Q5b geometric setting of Section~\ref{sec:q5b}.
+    With $A_r \to 1$ this gives~(i) up to corrections of order $\sup_{r' \ge r}\lvert A_r(r') - 1\rvert\, C/r$, and
+    with $A_r \equiv 1$ it gives $\Phi = \Phi_0 - C/r$ exactly.
+    For~(ii), the temporal identification with $\Phi_0 = 0$ gives $f_t = 1 - 2C/r$, and the closure gives
+    $f_r = f_t^{-1}$, which is~\eqref{eq:schwarzschild}.
+    The closure is not a coordinate choice: given the asymptotic normalisation it is a dynamical condition, equivalent
+    to $R^t{}_t = R^r{}_r$, and the metric $f_t = 1 - r_s/r$, $f_r = 1$ satisfies every constraint used in~(i).
+    The argument is that of Section~8 of~\cite{Beau2026c}; the present statement transcribes it to a supplied
+    extension of the Q5b co-metric.
   \end{proof}
 
-  \begin{remark}[Uniqueness within the admissibility class]
+  \begin{remark}[Other stationary exteriors; no uniqueness claim]
     \label{rem:schwarzschild-uniqueness}
-    The flux conservation equation~\eqref{eq:flux-conservation} determines the radial profile of the effective
-    metric only up to a class of spherically symmetric stationary solutions that a priori includes the
-    Schwarzschild\textendash de Sitter and Reissner\textendash Nordstr\"om deformations.
-    Each such deformation introduces an independent integration constant associated with an additional physical
-    scale --- a cosmological contribution in the first case, an electromagnetic charge in the second.
-    Within the present framework, these alternatives are not admitted: no scale beyond the Born\textendash Infeld
-    saturation constant~$c_{\mathrm{BI}}$ enters the admissibility structure of Foundation~M~\cite{Beau2026m}, and no
-    independent $U(1)$ charge is attached to the stationary obstruction in the exterior region used in
-    Theorem~\ref{thm:schwarzschild}.
-    The admissible exterior is therefore fixed, up to normalization, to the Schwarzschild form.
-    Uniqueness follows from the combined structural constraints of flux conservation and bounded admissibility,
-    not from symmetry alone.
-    A full structural exclusion of multi-scale deformations would require a separate analysis of admissibility
-    under additional scale parameters, which lies beyond the scope of the present paper.
+    Flux conservation does not single out the Schwarzschild form: the closure of
+    Proposition~\ref{thm:schwarzschild}(ii) is input.
+    Stationary spherically symmetric exteriors such as the Schwarzschild\textendash de Sitter and
+    Reissner\textendash Nordstr\"om families carry further integration constants, associated with additional scales.
+    No premise available here excludes them.
+    In particular, a single-scale rigidity of the admissibility structure is not established, and the geometric
+    sector already carries independent scales: a full-rank extension of the co-metric carries a length scale
+    (Q5b Remark~5.5), the temporal step is a free datum (Q11~\cite{Beau2026q11}), and the Einstein and cosmological
+    coefficients are matching data~\cite{Beau2026h,Beau2026Thermodynamics}.
+    No uniqueness statement is therefore made.
   \end{remark}
 
-  \subsection{The horizon as a projection degeneracy}
+  \subsection{The horizon: an interpretive reading}
   \label{sec:horizon}
 
   \begin{remark}[Horizon as a chart-relative degeneracy; interpretation]
@@ -435,45 +438,46 @@ from Admissible Non-Injective Projection}
     These readings are interpretation, not results.
   \end{remark}
 
-  \begin{remark}[Relation to the Gravity paper's horizon treatment]
+  \begin{remark}[Relation to the Gravity paper]
     \label{rem:gravity-horizon}
-    The spectral entropy functional $S_\Pi[g]$ of the Gravity paper~\cite{Beau2026h} is constructed on
-    Riemannian backgrounds via zeta-regularised heat-kernel methods; its extension to Lorentzian signature and to
-    horizon geometries is limited by the same symbol-degeneracy mechanism identified in
-    Remark~\ref{rem:horizon}.
-    The two descriptions do not compete: Remark~\ref{rem:horizon} provides a structural interpretation of a
-    limitation that is already implicit in the Lorentzian completion programme of~\cite{Beau2026h} and its
-    thermodynamic extension~\cite{Beau2026i}.
+    The spectral functional of the Gravity paper~\cite{Beau2026h} is constructed for a Laplace-type operator on
+    Riemannian backgrounds, by heat-kernel and zeta-regularisation methods.
+    A Lorentzian counterpart, and with it any treatment of horizon geometries within that functional, is open: it would
+    require an in-in construction on a closed time path~\cite{Beau2026i}.
+    The interpretive reading of Remark~\ref{rem:horizon} does not depend on it.
   \end{remark}
 
   \clearpage
 
-  \section{Einstein Equations as Consistency Conditions}
+  \section{Relation to the Einstein Equations}
   \label{sec:einstein}
 
-  The Schwarzschild metric~\eqref{eq:schwarzschild} is the unique stationary spherically symmetric exterior solution
-  of the effective geometry.
-  The transition from this specific solution to the general Einstein equations is the content of the Gravity
-  paper~\cite{Beau2026h}.
+  The exterior of Proposition~\ref{thm:schwarzschild} is a specific stationary solution, obtained with external
+  dynamical input.
+  A relation to the Einstein equations in general is the subject of the Gravity paper~\cite{Beau2026h} and of the
+  spectral-stationarity paper~\cite{Beau2026Thermodynamics}, under their own conditions.
 
-  \begin{remark}[Einstein equations from the spectral entropy functional]
+  \begin{remark}[Conditional Einstein response from the spectral functional]
     \label{rem:einstein}
-    The Gravity paper~\cite{Beau2026h} establishes, via heat-kernel methods and zeta regularisation on Riemannian
-    backgrounds, that the renormalised metric variation of the projective entropy functional
+    The Gravity paper~\cite{Beau2026h} takes a Laplace-type operator $A_g = -\nabla_g^2$ on a four-dimensional
+    Riemannian manifold as its starting point and studies the functional
     \begin{equation}
-      S_\Pi[g] \;=\; \tfrac{1}{2}\log\det{}'\mathcal{L}_\Pi
+      S_\Pi[g] \;=\; \tfrac{1}{2}\log\det{}' A_g .
     \end{equation}
-    produces, in the infrared-dominant two-derivative sector, a response proportional to the Einstein tensor
-    $G_{\mu\nu}$ via the heat-kernel mechanism of Sakharov-induced gravity.
-    The Einstein equations $G_{\mu\nu} = 8\pi G_N\,T_{\mu\nu}$ therefore emerge as consistency conditions of the
-    emergent geometry --- not as microscopic laws of the admissible substrate.
-    They express the balance between the curvature of the projection-induced metric (encoding admissibility
-    constraints) and the energy-momentum content (encoding localised obstructions to the admissibility flow, such
-    as the one giving~\eqref{eq:schwarzschild}).
-    The companion paper on spectral thermodynamics~\cite{Beau2026i} develops the variational side of this
-    construction and establishes that no local thermodynamic first law follows from it: the diagonal heat kernel
-    alone determines neither a physical temperature nor a heat density, an identification that would require both
-    an additional scale and an operational calibration law.
+    In a proper-time cutoff scheme, one minimal scalar contributes $\Delta c_{\mathrm{EH}} = -\Lambda^2/[12(4\pi)^2]$
+    to the Einstein\textendash Hilbert coefficient; the finite renormalised coefficient, its sign and Newton's constant
+    require a matching condition and are not predicted.
+    Once these coefficients are supplied, the Einstein tensor is the dominant local two-derivative metric response
+    when the renormalised higher-derivative ratios are small.
+    Identifying $A_g$ with the effective operator of the present paper would require the supplied rank-four extension
+    and a Lorentzian formulation, neither of which is available.
+    The companion paper~\cite{Beau2026Thermodynamics} shows that, assuming a renormalised infrared metric response and
+    an effective matter functional $W_\Pi$, stationarity of $\Gamma_\Pi = S_\Pi^{\mathrm{ren}} - W_\Pi$ is equivalent,
+    at leading infrared order, to $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$.
+    It also shows that no local first law follows from the heat kernel alone: the diagonal heat kernel determines
+    neither a physical temperature nor a heat density without an additional calibration map.
+    Reading these equations as consistency conditions of the emergent geometry, with $T^{(\Pi)}_{\mu\nu}$ encoding
+    localised obstructions to the admissibility flow, is an interpretation, not a result.
   \end{remark}
 
   \begin{remark}[Status of the chain]
@@ -503,7 +507,8 @@ from Admissible Non-Injective Projection}
     terms need not be.
     The fourth is the variational argument of~\cite{Beau2026h}, which is performed on Riemannian backgrounds and whose
     Einstein coefficient is a matching datum; applying it to the Lorentzian metric of the third arrow requires a
-    Lorentzian formulation that is not supplied.
+    Lorentzian formulation that is not supplied, and the field equations need in addition the effective matter
+    functional of~\cite{Beau2026Thermodynamics}.
     The present paper does not supply the third arrow: identifying the rank-three object of Q5b with the metric of the
     variational argument of~\cite{Beau2026h} requires that extension.
     No value of the co-metric coefficients is established (Section~\ref{par:cometric-metric}).
@@ -537,18 +542,13 @@ from Admissible Non-Injective Projection}
     common value of the coefficients free, and that Q11 shows spatial
     $\mathrm{SU}(2)$ invariance to leave $A_\tau$ independent of the spatial coefficients.
 
-  \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
-    The exclusion argument of Remark~\ref{rem:schwarzschild-uniqueness} rests on the structural claim that no
-    dimensional parameter independent of the Born\textendash Infeld scale~$c_{\mathrm{BI}}$ and the spectral cascade
-    enters the admissibility structure of Foundation~M.
-    Making this claim rigorous would require establishing the following: the admissibility axioms A3\textendash A4
-    admit $c_{\mathrm{BI}}$ as their unique primitive dimensional scale, and any additional dimensional parameter not
-    computable, without free parameters or unfixed initial conditions, as a functional of $c_{\mathrm{BI}}$ and the spectral
-    cascade violates the closure of A3\textendash A4.
-    Note that finite resolution parameters such as $q$ are dimensionless and disappear in the continuum limit;
-    they fall outside the scope of this claim.
-    This structural lemma would close the argument of Remark~\ref{rem:schwarzschild-uniqueness} unconditionally and
-    is a natural complement to the non-injectivity result of~\cite{Beau2026l}.
+  \paragraph{Additional scales in the exterior.}
+    Whether further dimensional data enter the exterior problem, and so admit Schwarzschild\textendash de Sitter or
+    Reissner\textendash Nordstr\"om type exteriors, is open.
+    Since the geometric sector already carries independent scales (Remark~\ref{rem:schwarzschild-uniqueness}), a
+    single-scale rigidity of the admissibility structure is not available as a premise.
+
+  \paragraph{Cosmological regime.}
     In homogeneous regimes, the admissibility flow gives a linear growth of cumulative projected capacity $I(n)$,
     underlying the emergent Hubble law and effective cosmological expansion~\cite{Cosmochrony}.
     The precise connection between the spectral exponent $\delta_{\mathrm{pair}}$ of the O-series~\cite{Beau2026a28}
@@ -575,15 +575,15 @@ from Admissible Non-Injective Projection}
     extension (Q5b-O2).
     The Newtonian exterior profile and the Schwarzschild form of the Born\textendash Infeld paper require, on the
     Heisenberg carrier, a supplied spherically symmetric and asymptotically flat extension, which Q5b does not
-    provide; the Schwarzschild form also needs external dynamical input, and the Einstein response needs matching
-    data.
+    provide; the Schwarzschild form also needs external dynamical input, the Einstein response needs matching data,
+    and the field equations need an effective matter functional.
     The variational construction does not by itself provide a local first law: the diagonal heat
     kernel determines neither a physical temperature nor a heat density without an additional
-    operational scale and calibration law.
+    calibration map.
 
     \paragraph{Interpretive outlook.}
-    The formal result supports treating spacetime geometry as an effective propagation structure
-    selected by admissibility.
+    The conditional results are compatible with treating spacetime geometry as an effective propagation structure
+    selected by admissibility; they do not show that admissibility selects it.
     It does not establish that geometry, thermodynamic temperature, and matter calibration emerge
     from one local scalar datum; those bridges remain separate questions.
 
