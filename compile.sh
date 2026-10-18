@@ -37,13 +37,19 @@ pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
 # Step 2: Run bibtex
 echo -e "${GREEN}Step 2/5: Running bibtex${NC}"
 cd "$OUTPUT_DIR"
-BSTINPUTS="../tex:${BSTINPUTS}" BIBINPUTS="../tex:${BIBINPUTS}" bibtex "$MAIN_NAME"
+# bibtex exits 1 on warnings and 2 or more on errors: tolerate warnings only
+BIBTEX_STATUS=0
+BSTINPUTS="../tex:${BSTINPUTS}" BIBINPUTS="../tex:${BIBINPUTS}" bibtex "$MAIN_NAME" || BIBTEX_STATUS=$?
+if [ "$BIBTEX_STATUS" -gt 1 ]; then
+    echo -e "${RED}bibtex failed (status $BIBTEX_STATUS)${NC}"
+    exit 1
+fi
 cd ..
 
 # Steps 3-4: rerun pdflatex until cross-references are stable (at most 4 more passes)
 LOG="$OUTPUT_DIR/$MAIN_NAME.log"
 for PASS in 2 3 4 5; do
-    echo -e "${GREEN}Step 3/5: pdflatex pass $PASS${NC}"
+    echo -e "${GREEN}Step 3/5 (pass $PASS): pdflatex${NC}"
     pdflatex -file-line-error -interaction=nonstopmode -synctex=1 \
         -output-directory="$OUTPUT_DIR" \
         -recorder \
