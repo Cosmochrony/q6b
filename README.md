@@ -1,129 +1,103 @@
+# Q6b — Toward Effective Spacetime Geometry from Admissible Non-Injective Projection
+
 This repository contains the source of the **Q6b Cosmochrony paper**
-*Effective Spacetime Geometry from Admissible Non-Injective Projection*.
+*Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a
+Conditional Newtonian Exterior*.
 
-Q6b is the geometric companion to Q6a. While Q6a derives the gauge group from fibre
-invariants of the non-injective projection, Q6b analyses the base geometric structure —
-the effective Lorentzian manifold on which those gauge fields propagate — and closes the
-geometric chain from the admissibility filter to the Einstein tensor.
+Q6b assembles the effective spacetime geometry that the admissibility framework of Foundation M yields
+conditionally, on a supplied Heisenberg carrier. Every step of the chain
+$\Pi_q \to \mathcal{L}_\Pi \to g^{\mu\nu}_{(3)} \to g^{\mu\nu} \to G_{\mu\nu}$ carries its own condition, and the
+paper states each one.
 
-## Conceptual Overview
+## Inputs and their status
 
-The paper proceeds in four logical steps:
+- **Spatial limit, [H-L] (not established).** Q5a shows the following.
+  - With the pipeline's initial vector, the canonical filtration is a toric Fourier window.
+  - For uniformly bounded weights, the published admissibility forms converge to the zero form.
+  - Under [H-depth] and [H-w′], no common scalar normalisation produces a non-trivial toric differential operator.
 
-1. **Import of the Q5a–Q5b geometric chain**
-   The admissibility filter $\Pi_q$ converges, under Q5a's Mosco hypotheses, to an
-   effective operator $\mathcal{L}_{\mathrm{eff}}$ on
-   $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$.
-   Q5b Theorems 5.2 and 6.1 then extract a four-dimensional effective metric tensor
-   $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature $(-,+,+,+)$.
+  The operator $\mathcal{L}_\Pi = -A\partial_x^2$ therefore enters only as Q5b's hypothesis [H-L].
+- **Lifting hypothesis, [H-lift] (open).** Q9 gives sufficient conditions for a kinetic Mosco limit and does not
+  discharge it.
+- **Heisenberg carrier (supplied).** The Heisenberg–Schrödinger representation $\pi_c$ is a supplied input, and it
+  is distinct from its Weil action. The admissibility axioms do not select it.
 
-2. **Effective metric and Hamilton–Jacobi propagation**
-   Once $g^{\mu\nu}$ is reconstructed from the principal symbol, the associated eikonal
-   equation $g^{\mu\nu}\partial_\mu S\,\partial_\nu S = 0$ is the Hamilton–Jacobi
-   equation for massless propagation in the emergent geometry.
-   This describes the characteristic propagation structure in the already-projected
-   geometric regime, not the admissibility layer itself.
+## Results
 
-3. **Schwarzschild geometry from flux conservation**
-   In the presence of a localised stationary obstruction to the admissibility flow with
-   spherical symmetry, flux conservation through admissible spheres forces the unique
-   stationary exterior solution to be the Schwarzschild metric
-   $ds^2 = -(1-r_s/r)\,dt^2 + (1-r_s/r)^{-1}dr^2 + r^2\,d\Omega^2$.
-   The horizon $r = r_s$ arises as a degeneracy of the principal symbol, not as a
-   singularity of the underlying admissible structure.
+1. **Rank-three co-metric (conditional on [H-L] and [H-lift]).** In the left-invariant frame, Q5b gives
+   $g^{\mu\nu} = \mathrm{diag}(-A_\tau, A_H, A_H, 0)$, with the temporal term stipulated. No lower-order term fills
+   the central slot. A full-rank co-metric needs a new operator with a central term of homogeneous degree four and
+   the length scale it carries; deriving such an extension from the admissibility structure is the open problem
+   Q5b-O2. No value of $A_\tau$, $A_H$ or $A_z$ is established.
+2. **Signature on the non-degenerate block (conditional on [H-hyp$_{\mathrm{red}}$]).** The block
+   $(-A_\tau, A_H, A_H)$ has signature $(-,+,+)$ with $\tau$ time-like. The signs are stipulated rather than
+   derived. The signature $(-,+,+,+)$ holds only for a supplied extension, for instance
+   $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$ with $A_z > 0$.
+3. **Newtonian exterior and conditional Schwarzschild form (Proposition 3.2).** The setting is a supplied rank-four
+   extension that is spherically symmetric and asymptotically flat in the exterior of a localised stationary
+   obstruction.
+   - (i) Flux conservation gives the Newtonian profile $\Phi = \Phi_0 - C/r$.
+   - (ii) The Schwarzschild form, with $r_s = 2C$, follows only with exterior homogeneity $A_r \equiv 1$ and, as
+     external dynamical input, the closure $f_t f_r = 1$ and the exact temporal identification $f_t = 1 + 2\Phi$
+     with $\Phi_0 = 0$ (Born–Infeld paper, §8).
 
-4. **Einstein equations as consistency conditions**
-   Via the spectral entropy functional $S_\Pi[g] = \frac{1}{2}\log\det'\mathcal{L}_\Pi$
-   (Gravity paper), the renormalised metric variation produces the Einstein tensor
-   $G_{\mu\nu}$ at the infrared two-derivative order.
-   The Einstein equations emerge as consistency conditions of the emergent geometry, not
-   as microscopic laws.
+   No uniqueness claim is made: Schwarzschild–de Sitter and Reissner–Nordström exteriors are excluded only by the
+   supplied inputs.
+4. **The required extension.** No extension diagonal in the left-invariant frame qualifies: its spatial part is
+   a left-invariant Riemannian metric, which is not flat and, being homogeneous, not asymptotically flat. An
+   asymptotically flat exterior grows as $r^3$, whereas the Carnot structure grows as $r^4$, so a qualifying
+   extension would not preserve the large-scale Carnot structure. Flat extensions with these properties exist, for
+   example the flat metric of the exponential chart. Whether the admissibility structure supplies one is open.
+5. **Horizon (interpretation).** In the conditional Schwarzschild exterior, the degeneracy at $r = r_s$ is
+   chart-relative; it is not an invariant breakdown of the effective operator.
+6. **Relation to the Einstein equations (conditional).**
+   - The Gravity paper works with $A_g = -\nabla_g^2$ on Riemannian backgrounds. Its Einstein coefficient is a
+     matching datum, and so are its sign and Newton's constant.
+   - The spectral-stationarity paper gives
+     $G_{\mu\nu} + \Lambda_{\mathrm{ren}} g_{\mu\nu} = 8\pi G_N T^{(\Pi)}_{\mu\nu}$, assuming an infrared response
+     and an effective matter functional.
+   - Applying either to the effective geometry would need the supplied extension and a Lorentzian formulation.
 
-## Core Results
+**Interpretive outlook.** The conditional results are compatible with reading spacetime geometry as an effective
+propagation structure rather than as primitive substrate data; they do not show that admissibility selects it.
 
-1. **Effective metric with Lorentzian signature**
-   The admissibility filter $\Pi_q$ selects degrees of freedom whose continuum limit
-   carries a Lorentzian metric with signature $(-,+,+,+)$ (Q5b Theorems 5.2, 6.1).
+## Open directions
 
-2. **Fully determined co-metric**
-   With Q8 (Casimir rigidity: $A_z = 2$), Q10 ($A_H = 2$ via spectral universality),
-   and Q11 (temporal Casimir rigidity: $A_\tau = 2$), the effective co-metric is now
-   fully explicit:
-   $$g^{\mu\nu} = \mathrm{diag}(-2,\,2,\,2,\,2).$$
-
-3. **Schwarzschild metric from bounded admissibility** *(Theorem)*
-   Under spherical symmetry, stationarity, and no additional microscopic scales, the
-   unique stationary exterior solution of the admissible geometry is the Schwarzschild
-   metric. Uniqueness follows from flux conservation and the Born–Infeld admissibility
-   bound, not from symmetry alone.
-
-4. **Horizon as projection degeneracy**
-   The Schwarzschild horizon is the locus where the principal symbol of
-   $\mathcal{L}_{\mathrm{eff}}$ becomes degenerate. The underlying admissible structure
-   remains regular; only its projection develops a degeneracy at $r = r_s$.
-
-5. **Einstein equations as consistency conditions**
-   The Gravity paper establishes $G_{\mu\nu}$ as the infrared response of the spectral
-   entropy functional. Q6b provides the explicit co-metric that enters this variation,
-   supplying the middle link of the chain.
-
-6. **Chain closure**
-   The geometric chain
-   $$\Pi_q \;\xrightarrow{\text{Q5a}}\; \mathcal{L}_\Pi \;\xrightarrow{\text{Q5b}}\;
-   g^{\mu\nu} \;\xrightarrow{\text{Gravity}}\; G_{\mu\nu}$$
-   is closed by Q6b, which identifies the symbol-extracted metric of Q5b with the one
-   entering the variational argument of the Gravity paper.
-
-## Conditional Status
-
-The results are **conditional on Q5a** (hypotheses H1, H-w, H-E1, Conjecture C), which
-provide the Mosco convergence of the effective operator. The [H-lift] hypothesis,
-previously carried from Q5b, has been **proved unconditionally in Q9** via generator
-suppression at rate $O(q^{-1/2})$, removing that source of conditionality entirely.
-
-Remaining conditionality: rigorous proofs of H1, H-w, H-E1, Conjecture C in Q5a would
-make all geometric results of Q6b fully unconditional.
-
-## What This Paper Does Not Assume
-
-- No background spacetime or metric postulated
-- No independent metric field equations (Einstein equations are derived, not assumed)
-- No free parameters beyond the Born–Infeld saturation constant $c_{\mathrm{BI}}$
-- No energy-momentum tensor postulated (arises from localised obstructions)
-- No cosmological constant or charge added by hand
-- Hamilton–Jacobi formalism appears as an effective description, not as a primitive layer
+- Establishing or replacing [H-L] (question Q5).
+- Q5b-O1, i.e. [H-lift].
+- Q5b-O2: a full-rank extension derived from the admissibility structure with the exterior properties.
+- Q5b-O3: the coefficient values.
+- Additional scales in the exterior.
 
 ## Keywords
 
-Non-injective projection, emergent spacetime, admissibility, effective metric,
-Lorentzian geometry, sub-Riemannian geometry, Heisenberg group, principal symbol,
-Schwarzschild solution, Einstein equations, spectral geometry, induced gravity
+Non-injective projection, emergent spacetime, admissibility, effective metric, Lorentzian geometry, sub-Riemannian
+geometry, Heisenberg group, principal symbol, Schwarzschild solution, Einstein equations, spectral geometry, induced
+gravity.
 
 ## Repository Contents
 
 ```
 q6b/
-├── out/           # Compiled paper PDF
-├── tex/           # LaTeX sources
-├── zenodo.json    # Zenodo metadata
+├── tex/         # LaTeX sources (main, cosmochrony-bibliography.bib, external-refs.bib)
+├── compile.sh   # Build script (output in out/, not versioned)
+├── zenodo.json  # Zenodo deposition metadata
+├── CITATION.cff
 └── README.md
 ```
 
 ## Links
 
-- Preprint: https://doi.org/10.5281/zenodo.20257944
-- Website: https://cosmochrony.org/science/spectral/program/q6/b/
+- 🔗 DOI: [10.5281/zenodo.19744005](https://doi.org/10.5281/zenodo.19744005)
+- 🌐 Website: https://cosmochrony.org/science/emergent-geometry/q6/b/
 
 ## Citation
 
-If you reference this work, please cite:
-
-> J. Beau, *Effective Spacetime Geometry from Admissible Non-Injective Projection*, 2026.
-> doi:10.5281/zenodo.20257944
+> J. Beau, *Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a
+> Conditional Newtonian Exterior*, Zenodo, 2026. DOI: 10.5281/zenodo.19744005.
 
 ## Acknowledgements
 
-Portions of the editorial refinement benefited from iterative interactions with large
-language models used as analytical assistants for exploring alternative formulations,
-checking internal consistency, and improving clarity. All claims, interpretations, and
-final formulations remain the sole responsibility of the author.
+Portions of the editorial refinement benefited from iterative interactions with large language models used as
+analytical assistants for exploring alternative formulations, checking internal consistency, and improving clarity.
+All claims, interpretations, and final formulations remain the sole responsibility of the author.
