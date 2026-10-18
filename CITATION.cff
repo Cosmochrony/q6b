@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you cite this work, please use the metadata from this file."
-title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior"
+title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Conditional Rank-Three Co-Metric and Newtonian Exterior"
 type: software
 authors:
   - family-names: "Beau"
@@ -12,7 +12,7 @@ doi: "10.5281/zenodo.19744005"
 license: "CC-BY-4.0"
 preferred-citation:
   type: article
-  title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a Conditional Newtonian Exterior"
+  title: "Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Conditional Rank-Three Co-Metric and Newtonian Exterior"
   authors:
     - family-names: "Beau"
       given-names: "Jérôme"

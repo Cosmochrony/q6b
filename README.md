@@ -1,8 +1,8 @@
 # Q6b — Toward Effective Spacetime Geometry from Admissible Non-Injective Projection
 
 This repository contains the source of the **Q6b Cosmochrony paper**
-*Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a
-Conditional Newtonian Exterior*.
+*Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Conditional Rank-Three Co-Metric
+and Newtonian Exterior*.
 
 Q6b assembles the effective spacetime geometry that the admissibility framework of Foundation M yields
 conditionally, on a supplied Heisenberg carrier. Every step of the chain
@@ -93,8 +93,8 @@ q6b/
 
 ## Citation
 
-> J. Beau, *Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Rank-Three Co-Metric and a
-> Conditional Newtonian Exterior*, Zenodo, 2026. DOI: 10.5281/zenodo.19744005.
+> J. Beau, *Toward Effective Spacetime Geometry from Admissible Non-Injective Projection: A Conditional Rank-Three
+> Co-Metric and Newtonian Exterior*, Zenodo, 2026. DOI: 10.5281/zenodo.19744005.
 
 ## Acknowledgements
 
