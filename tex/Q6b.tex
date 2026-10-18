@@ -29,15 +29,19 @@ from Admissible Non-Injective Projection}
 
   \maketitle
 
+  \begingroup
+  \setlength{\emergencystretch}{2em}
   \begin{abstract}
-    Continuing from the gauge structure established in the companion paper Q6a, we derive effective
-    spacetime geometry from the admissibility framework of Foundation~M by importing the continuum
-    limit and geometric-extraction theorems of the companion paper Q5b.
-    Under the lifting hypothesis~[H-lift] of Q5b and the Mosco hypotheses of Q5a, the admissibility
-    filter $\Pi_q$ converges to an effective operator $\mathcal{L}_{\mathrm{eff}}$ on $\mathbb{R}_\tau \times
-    \mathrm{Heis}_3(\mathbb{R})$ whose principal symbol defines a four-dimensional effective metric tensor
-    $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ of Lorentzian signature~$(-,+,+,+)$
-    (Q5b Theorems~5.2 and~6.1).
+    Continuing from the gauge structure of the companion paper Q6a, we assemble the effective spacetime geometry that
+    the admissibility framework of Foundation~M yields conditionally, on a supplied Heisenberg carrier.
+    Q5a shows that the published admissibility forms supply no spatial limit operator (the zero form for uniformly
+    bounded weights; no common scalar normalisation under its hypotheses [H-depth] and [H-$w'$]), so the operator
+    $-A\partial_x^2$ enters as the hypothesis~[H-L] of Q5b.
+    Under~[H-L] and the open lifting hypothesis~[H-lift], the effective operator on
+    $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a rank-three co-metric
+    $\mathrm{diag}(-A_\tau, A_H, A_H, 0)$ (Q5b Theorem~5.2), whose non-degenerate block has signature $(-,+,+)$, with
+    stipulated signs, under the hyperbolicity hypothesis [H-hyp$_{\mathrm{red}}$] (Q5b Theorem~6.1); the signature
+    $(-,+,+,+)$ needs a supplied rank-four extension (open problem Q5b-O2).
     In the presence of a localised stationary obstruction to the admissibility flow with spherical symmetry, flux
     conservation within this effective geometry forces the Schwarzschild metric as the unique stationary exterior
     solution, with the horizon appearing as a degeneracy of the principal symbol rather than as a singularity of the
@@ -45,14 +49,14 @@ from Admissible Non-Injective Projection}
     The Einstein equations emerge as consistency conditions of the emergent geometry, with the Einstein\textendash
     Hilbert action derived rigorously from the spectral entropy functional in the Gravity
     paper.
-    The present paper closes the chain $\Pi_q \to \mathcal{L}_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$.
-    Q9 proves hypothesis~[H-lift], so the main geometric results are unconditional with respect
-    to that hypothesis.
+    Each step of the chain $\Pi_q \to \mathcal{L}_{\mathrm{eff}} \to g^{\mu\nu} \to G_{\mu\nu}$ is conditional;
+    Q9 does not discharge [H-lift].
     No dynamical substrate is required at any step.
     \textbf{Interpretive reading.}
     The construction treats spacetime geometry as an effective propagation structure selected by
     admissibility, rather than as primitive substrate data.
   \end{abstract}
+  \endgroup
 
   \paragraph{Keywords.}
     non-injective projection; emergent spacetime; admissibility; effective metric; Lorentzian geometry; sub-Riemannian
@@ -77,16 +81,20 @@ from Admissible Non-Injective Projection}
     bounded admissibility constraints of Foundation~M~\cite{Beau2026m} are imposed on a spatially varying
     projection?
 
-    The geometric chain is now in place.
-    Q5a~\cite{Beau2026q5a} establishes, under Hypotheses~H1,~H-w,~H-E1 and Conjecture~C, that the discrete admissible
-    Dirichlet forms on the Cayley graph $\mathrm{Cay}(G_q, S_q)$ Mosco-converge to a one-dimensional shadow operator
-    $\mathcal{L}_\Pi = -A\,\partial_x^2$ on $L^2(\mathbb{R})$.
-    Q5b~\cite{Beau2026q5b} promotes this one-dimensional shadow to a four-dimensional effective geometry: the BFS
-    shell stratification of $G_q$ converges, in the Gromov\textendash Hausdorff sense, to the
-    Carnot\textendash Carath\'eodory sphere foliation of $\mathrm{Heis}_3(\mathbb{R})$ with homogeneous dimension
-    $D_{\mathrm{hom}} = 4$; the principal symbol of the effective operator extends to a
-    Lorentzian metric tensor on $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$
-    (under~[H-lift], proved in Q9~\cite{Beau2026q9}).
+    The geometric chain is conditional at every step.
+    Q5a~\cite{Beau2026q5a} shows that, with the pipeline's initial vector, the canonical filtration of the admissible
+    fibre on the supplied Heisenberg carrier is a growing toric Fourier window; that, for uniformly bounded weights,
+    the published admissibility forms converge on it to the zero form; and that, under its Hypotheses~[H-depth]
+    and~[H-$w'$], no common scalar normalisation produces a non-trivial toric differential operator.
+    The spatial limit operator $\mathcal{L}_\Pi = -A\,\partial_x^2$ on $L^2(\mathbb{R})$ is therefore not established;
+    Q5b~\cite{Beau2026q5b} posits it as the hypothesis~[H-L].
+    Independently of~[H-L], Q5b shows that on balls of radius $n \ll \sqrt{q}$ the rescaled BFS shells of $G_q$
+    converge, in the Gromov\textendash Hausdorff sense, to the sphere foliation of a sub-Finsler
+    Carnot\textendash Carath\'eodory metric on $\mathrm{Heis}_3(\mathbb{R})$, of homogeneous dimension
+    $D_{\mathrm{hom}} = 4$.
+    Under~[H-L] and the open lifting hypothesis~[H-lift], the principal symbol of the effective operator on
+    $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ gives a co-metric of rank three; its extension to a
+    four-dimensional Lorentzian co-metric is the open problem Q5b-O2.
 
     The task of the present paper is to close the chain from this effective metric to the Einstein equations of
     general relativity.
@@ -98,18 +106,20 @@ from Admissible Non-Injective Projection}
 
   \subsection*{What is and is not derived in this paper}
 
-    This paper derives the \emph{structure} of effective spacetime geometry from the admissibility framework.
-    It does not derive the precise numerical value of Newton's constant $G_N$, nor does it prove the hypotheses
-    inherited from Q5a and Q5b.
-    All results were conditional on~[H-lift] (Q5b Hypothesis~4.1), which has since been proved
-    in Q9~\cite{Beau2026q9}, and on the Q5a Mosco convergence hypotheses.
+    This paper assembles the conditional \emph{structure} of effective spacetime geometry from the admissibility
+    framework.
+    It does not derive the precise numerical value of Newton's constant $G_N$, nor does it establish the hypotheses
+    inherited from Q5b.
+    Its geometric statements are conditional on~[H-L] (Q5b Hypothesis~1.1, not established), on~[H-lift]
+    (Q5b Hypothesis~4.1, open; Q9~\cite{Beau2026q9} gives sufficient conditions and does not discharge it) and, for
+    the signature, on~[H-hyp$_{\mathrm{red}}$] (Q5b Theorem~6.1).
     Open directions are collected in Section~\ref{sec:open}.
 
   \subsection*{Organisation}
 
     Section~\ref{sec:continuum} reviews the Q5a\textendash Q5b geometric chain and collects the theorems used as
     inputs.
-    Section~\ref{sec:geometry} derives the effective metric, imports its Lorentzian signature, establishes the
+    Section~\ref{sec:geometry} restates the conditional effective co-metric and its signature, establishes the
     Schwarzschild exterior solution, and interprets the horizon.
     Section~\ref{sec:einstein} closes the chain to the Einstein equations.
     Section~\ref{sec:open} identifies the open directions.
@@ -117,20 +127,38 @@ from Admissible Non-Injective Projection}
   \section{The Q5a\textendash Q5b Geometric Chain}
   \label{sec:continuum}
 
-  \subsection{From the discrete projection to the 1D shadow operator}
+  \subsection{What Q5a establishes, and the spatial limit hypothesis [H-L]}
     \label{sec:q5a}
 
-    The discrete admissibility filter $\Pi_q$ of Foundation~M~\cite{Beau2026m} acts on the orbit span
-    $\Omega_n^{(c)} \subset \mathbb{C}^q$, selecting admissible directions via the Born\textendash Infeld bound
-    $A_n \leq c_{\mathrm{BI}}/\sqrt{\lambda_n}$ (Axiom~A3 of~\cite{Beau2026m}).
-    Q5a~\cite{Beau2026q5a} establishes three convergences, conditionally on Hypotheses~H1,~H-w,~H-E1 and
-    Conjecture~C:
+    The admissible fibre of Foundation~M~\cite{Beau2026m} carries, on a supplied Heisenberg carrier
+    $\mathcal{H}_c = L^2(\mathbb{Z}/q\mathbb{Z})$, the Heisenberg\textendash Schr\"odinger representation $\pi_c$ of
+    $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ at a fixed non-trivial central character.
+    The carrier is not selected by the admissibility axioms: together with Born\textendash Infeld parity they admit an
+    explicit $\mathfrak{S}_3$ countermodel~\cite{Beau2026m,Beau2026HeisenbergStructure}.
+    It is therefore a supplied input here, and its associated Weil action of the symplectic automorphism group is a
+    further representation, which is not used below.
+    The discrete admissibility filter $\Pi_q$ acts on the orbit span $\Omega_n^{(c)}$ through the Born\textendash Infeld
+    admissibility constraint $A_n \leq c_{\mathrm{BI}}/\sqrt{\lambda_n}$ (Level~4 of~\cite{Beau2026m}).
+    Foundation~M states the saturation threshold of its Axioms~A3\textendash A4 as the capacity axiom [A-cap]
+    of~\cite{Beau2026c}, with the Born\textendash Infeld form as an explicit additional input.
+
+    Q5a~\cite{Beau2026q5a} determines what the canonical filtration converges to:
     \begin{itemize}
-      \item[(T1)] a Hilbert inductive limit $\varinjlim_q \mathcal{C}_q \simeq L^2(\mathbb{R})$, where
-      $\mathcal{C}_q \simeq L^2(\mathbb{Z}/q\mathbb{Z})$ is the Weil representation space at finite~$q$;
-      \item[(T2)] convergence of rescaled Weil generators to the metaplectic generators of
-      $\mathrm{Heis}_3(\mathbb{R})$;
-      \item[(T3)] Mosco convergence of the admissibility Dirichlet forms $\mathcal{E}_q$ to a second-order operator
+      \item[(Q5a-1)] with the pipeline's initial vector, the filtration stage $\Omega_n$ is exactly the toric Fourier
+      window $\mathrm{span}\{e^{2\pi i b x/q} : |b| \le n\}$ (Q5a Theorem~3.1);
+      \item[(Q5a-2)] if the admissibility weights are uniformly bounded, the published admissibility forms tend to zero
+      on the filtration stages at rate $q^{-2}$, uniformly on norm-bounded sets, and their Mosco limit is the zero form
+      (Q5a Theorem~5.1);
+      \item[(Q5a-3)] under Hypotheses~[H-depth] (diverging saturation depth) and~[H-$w'$] (positive finite limits of the
+      modulation and translation weights), no common scalar normalisation of the forms produces, on toric targets, a
+      limit containing both a finite derivative term and the modulation sector (Q5a Theorem~6.1).
+    \end{itemize}
+    The spatial limit operator consumed by Q5b is therefore not established.
+    Q5b~\cite{Beau2026q5b} formalises it as an explicit hypothesis.
+    \begin{itemize}
+      \item[{[H-L]}] (Q5b Hypothesis~1.1; not established.)
+      There exists a normalisation of the admissibility structure under which the admissibility forms converge to the
+      second-order operator
       \begin{equation}
         \label{eq:Lpi-shadow}
         \mathcal{L}_\Pi \;=\; -A\,\partial_x^2
@@ -138,43 +166,49 @@ from Admissible Non-Injective Projection}
         \qquad A > 0.
       \end{equation}
     \end{itemize}
-
-    The operator~\eqref{eq:Lpi-shadow} is one-dimensional: it acts on the central coordinate~$x$ of the Weil block,
-    and is the operator-theoretic shadow of the homogeneous four-dimensional structure carried by
-    $\mathrm{Heis}_3(\mathbb{R})$.
-    The passage from this one-dimensional shadow to a four-dimensional effective geometry is the content of Q5b.
+    Q5b records that no source of~[H-L] is identified in the corpus, and that Q5a shows it to fail for the published
+    normalisation and for every common scalar rescaling of it on toric targets.
+    Every statement of the present paper that consumes~\eqref{eq:Lpi-shadow} is conditional on~[H-L].
+    The operator~\eqref{eq:Lpi-shadow} is one-dimensional; its relation to the homogeneous four-dimensional structure
+    carried by $\mathrm{Heis}_3(\mathbb{R})$ is the content of Q5b, under the further hypothesis~[H-lift].
 
   \subsection{From the 1D shadow to a four-dimensional Carnot geometry}
     \label{sec:q5b}
 
-    Q5b~\cite{Beau2026q5b} establishes three further results that together promote~$\mathcal{L}_\Pi$ to a
-    four-dimensional effective metric.
+    Q5b~\cite{Beau2026q5b} establishes a geometric convergence result that does not depend on~[H-L], and two results,
+    conditional on~[H-L], [H-lift] and, for the signature, [H-hyp$_{\mathrm{red}}$], that relate~$\mathcal{L}_\Pi$ to
+    a rank-three effective co-metric.
 
     \paragraph{Carnot convergence.}
-      By the Bass\textendash Guivarc'h theorem, $\mathrm{Heis}_3(\mathbb{R})$ is a Carnot group of homogeneous dimension
-      $D_{\mathrm{hom}} = 4$ (Q5b Theorem~2.1).
-      The BFS shell stratification $\{S_n\}$ of $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ converges, in the
-      pre-saturation regime $n \ll q$, to the Carnot\textendash Carath\'eodory sphere foliation of the continuous group
-      as a structural consequence of Pansu's asymptotic cone theorem (Q5b Theorem~3.2~\cite{Beau2026q5b}).
-      The limiting geometry therefore carries spectral dimension~$4$.
+      By the Bass\textendash Guivarc'h theorem, the BFS balls grow as $|B_n| \sim C n^4$, the homogeneous dimension of
+      the Carnot group $\mathrm{Heis}_3(\mathbb{R})$ being $D_{\mathrm{hom}} = 4$ (Q5b Theorem~2.1).
+      On balls of radius $n = \lfloor q^\alpha \rfloor$ with $0 < \alpha < 1/2$, where the BFS balls of
+      $G_q = \mathrm{Heis}_3(\mathbb{Z}/q\mathbb{Z})$ coincide with those of the integer Heisenberg group, the rescaled
+      BFS metric converges in the Gromov\textendash Hausdorff sense to a sub-Finsler Carnot\textendash Carath\'eodory
+      ball of $\mathrm{Heis}_3(\mathbb{R})$, as a structural consequence of Pansu's asymptotic cone theorem (Q5b
+      Theorem~3.2~\cite{Beau2026q5b}).
+      This convergence does not depend on~[H-L].
+      The limiting geometry carries Hausdorff and spectral dimension~$4$.
 
     \paragraph{Lifting hypothesis.}
-      Q5b introduces Hypothesis~[H-lift] (Definition~4.1 of~\cite{Beau2026q5b}): the one-dimensional shadow
-      $\mathcal{L}_\Pi$ of~\eqref{eq:Lpi-shadow} is the image, under the Schr\"odinger representation~$d\pi_1$, of the
-      kinetic sector of the sub-Riemannian Laplacian $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ on
-      $\mathrm{Heis}_3(\mathbb{R})$, restricted to the admissible sector.
-      This is not a structural conjecture but a technical reconstruction step.
+      Q5b introduces Hypothesis~[H-lift] (Hypothesis~4.1 of~\cite{Beau2026q5b}): the operator $\mathcal{L}_\Pi$
+      of~\eqref{eq:Lpi-shadow} posited by~[H-L] is $A$ times the image, under the Schr\"odinger representation~$\pi_1$
+      at unit central character, of the kinetic sector of the nonnegative operator $-\Delta_H$, where
+      $\Delta_H = \widetilde{X}^2 + \widetilde{Y}^2$ is the sub-Laplacian of $\mathrm{Heis}_3(\mathbb{R})$, restricted
+      to the admissible (low-energy) subspace of $L^2(\mathbb{R})$.
+      Its object exists only under~[H-L].
       The Plancherel decomposition of $L^2(\mathrm{Heis}_3(\mathbb{R}))$ into Schr\"odinger representations
       $\pi_\lambda$ acting on $L^2(\mathbb{R})$ is classical in the harmonic analysis of nilpotent Lie groups
-      (Corwin\textendash Greenleaf, Folland, Stein).
-      [H-lift] amounts to identifying the admissible restriction of $\mathcal{L}_\Pi$ with the image of the admissible
-      sector of $\Delta_H$ under $d\pi_1$; its resolution is expected within this standard framework.
-      Hypothesis~[H-lift] has since been proved in Q9~\cite{Beau2026q9} via generator
-      suppression, confirming the kinetic-sector concentration unconditionally.
+      (Corwin\textendash Greenleaf, Folland, Stein), and Q5b names it as a possible route (open problem Q5b-O1).
+      The main open step is a direct proof that the Mosco limit of the admissibility forms coincides, up to the
+      factor~$A$, with the kinetic sector of $-d\pi_1(\Delta_H)$.
+      Hypothesis~[H-lift] is open.
+      Q9~\cite{Beau2026q9} proves that, under its premises [K] and [R], the forms Mosco-converge to the free kinetic
+      form, and states that this does not discharge~[H-lift].
 
-    \paragraph{From co-metric to effective metric.}
+    \paragraph{From the principal symbol to a rank-three co-metric.}
       \label{par:cometric-metric}
-      Under~[H-lift], the full effective operator $\mathcal{L}_{\mathrm{eff}}$ on
+      Under~[H-L] and~[H-lift], the effective operator $\mathcal{L}_{\mathrm{eff}}$ on
       $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ has a principal symbol
       \begin{equation}
         \label{eq:principal-symbol}
@@ -188,60 +222,80 @@ from Admissible Non-Injective Projection}
       Consequently, $A^{\mu\nu}$ does not admit a direct inverse on $TM$ and does not itself define a metric tensor
       at the principal-symbol level.
 
-      The effective metric $g_{\mu\nu}$ is recovered not by inverting the leading symbol but by completing the
-      sub-Riemannian co-metric through sub-principal corrections that lift the degeneracy along~$Z$.
-      Q5b Theorem~5.2 carries out this completion under~[H-lift], producing a non-degenerate contravariant tensor
+      In the left-invariant frame $(\partial_\tau, \widetilde{X}, \widetilde{Y}, \widetilde{Z})$, Q5b Theorem~5.2
+      gives, under~[H-L] and~[H-lift], the leading-order co-metric
       \begin{equation}
         \label{eq:metric-from-symbol}
-        g^{\mu\nu}(x) \;\propto\; A^{\mu\nu}_{\mathrm{eff}}(x),
+        g^{\mu\nu}(p) \;=\; \mathrm{diag}(-A_\tau,\; A_H,\; A_H,\; 0),
       \end{equation}
-      where $A^{\mu\nu}_{\mathrm{eff}}$ denotes the completed co-metric.
-      The resulting $g_{\mu\nu}$ is an \emph{effective} metric in the sub-Riemannian sense of~\cite{Beau2026q5b}:
-      non-degenerate after completion, defined on the quotient by the residual null direction, and not identifiable
-      with the inverse of the leading-order symbol.
-      The metric is a derived object encoding how admissible modes propagate in the continuum limit, not an
-      independent dynamical variable.
+      read off from the principal symbol, the temporal part of $\mathcal{L}_{\mathrm{eff}}$ being stipulated.
+      This tensor has rank three.
+      No term of lower differential order in $\mathcal{L}_{\mathrm{eff}}$ changes it: the sub-Laplacian has no
+      first-order part and a rank-two principal symbol (Q5b Remark~5.4; Q8~\cite{BeauQ8}, Proposition~3.1).
+      A non-degenerate co-metric therefore cannot be obtained by completing~\eqref{eq:metric-from-symbol} through
+      sub-principal corrections.
+      It requires a new operator containing a central term of homogeneous degree four, together with the length
+      scale that such a term carries (Q5b Remark~5.5); this is the open problem Q5b-O2.
+      No value of $A_\tau$, $A_H$ or of a central coefficient $A_z$ is established (open problem Q5b-O3).
+      The co-metric is a derived object encoding how admissible modes would propagate in the continuum limit posited
+      by~[H-L], not an independent dynamical variable.
 
-    \paragraph{Lorentzian signature (inherited, not derived).}
+    \paragraph{Lorentzian signature (conditional, on the non-degenerate block).}
       \label{par:signature-origin}
-      The Lorentzian signature of the effective metric is not established within the present paper.
-      It is inherited from Q5b Theorem~6.1, which itself imports the signature-selection argument of~\cite{Beau2026c}
-      (Sections~5\textendash 6): in homogeneous and quasi-isotropic admissible regimes, the bounded Born\textendash
-      Infeld admissibility constraint (A3\textendash A4 of~\cite{Beau2026m}) forces $g^{\mu\nu}$ to have signature
-      $(-,+,+,+)$.
-      The structural content of the argument lies in the exclusion of the three incompatible alternatives: Riemannian
-      signature produces an elliptic principal symbol and contradicts the finite-capacity bound of~A4;
-      ultra-hyperbolic signature fails to admit a globally well-posed initial value problem; degenerate signature is
-      excluded at the level of the effective metric after the sub-principal completion described above.
-      The role of Q6b is to propagate this structural constraint to the effective geometry of
-      Section~\ref{sec:geometry}, not to re-establish it.
+      The signature of the effective co-metric is not established within the present paper.
+      Q5b Theorem~6.1 applies the hyperbolicity hypothesis [H-hyp] of~\cite{Beau2026c} to the reduction of
+      $\mathcal{L}_{\mathrm{eff}}$ to functions independent of the central variable,
+      $L_{\mathrm{red}} = -A_\tau\partial_\tau^2 + A_H(\partial_x^2 + \partial_y^2)$; this application is denoted
+      [H-hyp$_{\mathrm{red}}$].
+      Its three clauses posit that $L_{\mathrm{red}}$ is second order in~$\tau$, that its principal symbol is
+      non-degenerate on $(k_\tau, k_x, k_y)$, and that its propagation has a finite characteristic cone with~$\tau$ as
+      the single ordering direction.
+      Under~[H-L], [H-lift] and~[H-hyp$_{\mathrm{red}}$], in homogeneous and quasi-isotropic admissible regimes, the
+      non-degenerate block $(-A_\tau, A_H, A_H)$ has signature $(-,+,+)$ with~$\tau$ time-like.
+      In three variables, the argument excludes the definite class by the finite-cone clause, a Lorentzian class with
+      a spatial time-like direction by the ordering clause, and the degenerate or parabolic class by the
+      non-degeneracy clause.
+      The signs of $\mathcal{L}_{\mathrm{eff}}$ are stipulated, not derived: the theorem records that they are the only
+      ones compatible with a finite characteristic cone ordered by~$\tau$ (Q5b Remark~6.2).
+      The hyperbolicity hypothesis is an explicit assumption; the capacity bound alone does not force hyperbolicity,
+      flux-limited diffusion being a counterexample~\cite{Beau2026c}.
+      A diagonal extension $\mathrm{diag}(-A_\tau, A_H, A_H, A_z)$ with $A_z > 0$ in the left-invariant frame would have
+      the signature $(-,+,+,+)$; its supply is the open problem Q5b-O2.
+      The present paper carries this conditional statement forward and does not re-establish it.
 
   \subsection{Inherited status discipline}
   \label{sec:status}
 
-  The results of the present paper are conditional on the following hypotheses, all inherited from
-  Q5a~\cite{Beau2026q5a} and Q5b~\cite{Beau2026q5b} and carried forward without modification:
+  The results of the present paper are conditional on the following hypotheses, inherited from
+  Q5b~\cite{Beau2026q5b}, and on the further inputs named where they are used:
   \begin{itemize}
-    \item H1, H-w, H-E1 (Q5a): embedding, weight stabilisation, and energy control hypotheses governing the Mosco
-    limit of~\eqref{eq:Lpi-shadow}.
-    \item Conjecture~C (Q5a): discrete Rellich compactness, numerically confirmed at the pair level for
-    $q \leq 401$ via the O-series pipeline~\cite{Beau2026a16,Beau2026a28}.
-    \item [H-lift] (Q5b~Definition~4.1): identification of $\mathcal{L}_\Pi$ as the kinetic sector of
-    $d\pi_1(\Delta_H)$ --- \textit{proved in Q9~\cite{Beau2026q9}}.
+    \item {[H-L]} (Q5b Hypothesis~1.1): existence of the spatial limit operator~\eqref{eq:Lpi-shadow}; not
+    established, and shown by Q5a~\cite{Beau2026q5a} to fail for the published normalisation and its common scalar
+    rescalings.
+    \item {[H-lift]} (Q5b Hypothesis~4.1): identification of $\mathcal{L}_\Pi$ with $A$ times the kinetic sector of
+    $-d\pi_1(\Delta_H)$ on the admissible subspace; open (Q5b-O1), Q9~\cite{Beau2026q9} giving sufficient conditions
+    [K] and [R] without discharging it.
+    \item {[H-hyp$_{\mathrm{red}}$]} (Q5b Theorem~6.1): hyperbolicity of the reduced operator $L_{\mathrm{red}}$; an
+    explicit hypothesis, not derived from the capacity bound.
+    \item A supplied rank-four extension of the co-metric~\eqref{eq:metric-from-symbol}, for every statement that
+    needs a non-degenerate four-dimensional metric; its construction is the open problem Q5b-O2.
   \end{itemize}
-  With~[H-lift] now proved, the sole remaining conditionality stems from the Q5a Mosco
-  convergence hypotheses (H1, H-w, H-E1, Conjecture~C).
+  The supplied Heisenberg carrier of Section~\ref{sec:q5a} is a modelling input throughout.
+  The results of Q5a recalled in Section~\ref{sec:q5a}, which carry their own hypotheses, and the Carnot convergence
+  of Q5b do not depend on the hypotheses listed above.
 
   \section{Effective Spacetime Geometry}
   \label{sec:geometry}
 
-  \subsection{The effective metric}
+  \subsection{The effective co-metric}
     \label{sec:metric}
 
-    Under the hypotheses of Section~\ref{sec:status}, Q5b Theorem~5.2 gives the effective metric
-    $g^{\mu\nu}(x) \propto A^{\mu\nu}(x)$ on the non-degenerate part of the sub-Riemannian structure, with Lorentzian
-    signature~$(-,+,+,+)$ from Q5b Theorem~6.1.
-    The metric is defined on the effective continuum $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ and
+    Under the hypotheses of Section~\ref{sec:status}, Q5b Theorem~5.2 gives the rank-three
+    co-metric~\eqref{eq:metric-from-symbol}, and Q5b Theorem~6.1 gives the signature $(-,+,+)$ of its non-degenerate
+    block under~[H-hyp$_{\mathrm{red}}$].
+    A four-dimensional Lorentzian metric $g_{\mu\nu}$ is available only for a supplied rank-four extension (Q5b-O2);
+    the statements below that use one are conditional on that supply.
+    The co-metric is defined on the effective continuum $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ and
     governs the propagation of admissible modes in the continuum limit of the projection.
 
     \begin{remark}[Nature of the effective four-dimensionality]
@@ -251,7 +305,7 @@ from Admissible Non-Injective Projection}
       principal-symbol level.
       It arises from the homogeneous dimension $D_{\mathrm{hom}} = 4$ of the underlying Carnot structure (Q5b
       Theorem~3.2), which governs both volume growth and spectral scaling.
-      The Lorentzian metric extracted from the principal symbol is an effective object, valid after projection onto
+      The co-metric extracted from the principal symbol is an effective object, valid after projection onto
       admissible continuum configurations; it is not a smooth metric at every point of the sub-Riemannian space
       $\mathbb{R}_\tau \times \mathrm{Heis}_3(\mathbb{R})$ without further hypotheses.
       Extending the construction to a full $4\times 4$ non-degenerate Lorentzian metric that incorporates the
@@ -259,8 +313,9 @@ from Admissible Non-Injective Projection}
     \end{remark}
 
     \paragraph{Relation to Hamilton--Jacobi dynamics.}
-      Once the effective metric $g^{\mu\nu}$ has been reconstructed from the principal symbol of
-      $\mathcal{L}_{\mathrm{eff}}$ (equations~\eqref{eq:principal-symbol}--\eqref{eq:metric-from-symbol}),
+      Once the effective co-metric $g^{\mu\nu}$ has been read off from the principal symbol of
+      $\mathcal{L}_{\mathrm{eff}}$ (equations~\eqref{eq:principal-symbol}--\eqref{eq:metric-from-symbol}), or a
+      rank-four extension of it has been supplied,
       the associated eikonal equation
       \[
         g^{\mu\nu}(x)\,\partial_\mu S\,\partial_\nu S \;=\; 0
@@ -268,7 +323,7 @@ from Admissible Non-Injective Projection}
       is precisely the Hamilton--Jacobi equation for massless propagation in the emergent
       effective geometry~\cite{Arnold1989}.
       This identification belongs to the already projected geometric regime: it does not define admissibility
-      itself, but describes the characteristic propagation structure once the effective metric has been
+      itself, but describes the characteristic propagation structure once the effective co-metric has been
       reconstructed.
       Hamilton--Jacobi theory should therefore be understood here as an effective reformulation of the
       projected dynamics, not as a primitive layer of the framework.
@@ -278,7 +333,7 @@ from Admissible Non-Injective Projection}
   \subsection{Schwarzschild geometry from flux conservation}
   \label{sec:schwarzschild}
 
-  The Lorentzian structure of Section~\ref{sec:metric} is defined in homogeneous and quasi-isotropic admissible
+  The signature statement of Section~\ref{sec:metric} holds in homogeneous and quasi-isotropic admissible
   regimes.
   A localised stationary obstruction to the admissibility flow breaks homogeneity and selects, via flux
   conservation, a specific stationary exterior metric.
@@ -402,15 +457,22 @@ from Admissible Non-Injective Projection}
     \begin{equation}
       \label{eq:chain}
       \Pi_q
-      \;\xrightarrow{\text{Q5a}}\;
+      \;\xrightarrow{\;[\mathrm{H\text{-}L}]\;}\;
       \mathcal{L}_\Pi
-      \;\xrightarrow{\text{Q5b}}\;
+      \;\xrightarrow{\;[\mathrm{H\text{-}lift}]\;}\;
+      g^{\mu\nu}_{(3)}
+      \;\xrightarrow{\;\text{Q5b-O2}\;}\;
       g^{\mu\nu}
-      \;\xrightarrow{\text{\cite{Beau2026h}}}\;
+      \;\xrightarrow{\;\text{\cite{Beau2026h}}\;}\;
       G_{\mu\nu}
     \end{equation}
-    is now closed, conditionally on the hypotheses of Section~\ref{sec:status} and on the Riemannian restriction
-    of~\cite{Beau2026h}.
+    is conditional at each arrow.
+    The first arrow is the unestablished hypothesis~[H-L].
+    The second is Q5b Theorem~5.2 under the open hypothesis~[H-lift]; its output $g^{\mu\nu}_{(3)}$ is the rank-three
+    co-metric~\eqref{eq:metric-from-symbol}.
+    The third is a supplied rank-four extension, whose construction is the open problem Q5b-O2.
+    The fourth is the variational argument of~\cite{Beau2026h}, on Riemannian backgrounds, whose Einstein coefficient
+    is a matching datum.
     The present paper supplies the middle link: the identification of the symbol-extracted object of Q5b with the
     metric appearing in the variational argument of~\cite{Beau2026h}.
     With Q8~\cite{BeauQ8}, Q10~\cite{Beau2026q10}, and Q11~\cite{Beau2026q11} now established, the effective
@@ -423,10 +485,6 @@ from Admissible Non-Injective Projection}
   \label{sec:open}
 
   \paragraph{Resolved directions.}
-    \textbf{Q5b-O1 ([H-lift]).}
-    Q9~\cite{Beau2026q9} proves this direction via generator suppression and removes all
-    conditionality on~[H-lift] from the present paper.
-
     \textbf{Q5b-O2 (horizontal sector).}
     Q10~\cite{Beau2026q10} establishes $A_H = 2$ via
     spectral universality~\cite{Beau2026u1}, confirmed numerically for
@@ -441,9 +499,13 @@ from Admissible Non-Injective Projection}
     and through~\cite{Beau2026h} yields a structural determination of~$G_N$.
 
   \paragraph{Remaining open directions.}
-    \textbf{Closing the Q5a hypotheses.}
-    Rigorous proofs of H1, H-w, H-E1, and Conjecture~C
-    would remove all remaining conditionality from the results of this paper.
+    \textbf{Establishing or replacing [H-L].}
+    No source of the spatial limit operator~\eqref{eq:Lpi-shadow} is identified in the corpus.
+    Establishing it, or replacing it by another spatial input, is the open content of question Q5 of the Foundation
+    programme, and every geometric statement of this paper depends on it.
+
+    \textbf{Q5b-O1 ([H-lift]).}
+    Open; Q9~\cite{Beau2026q9} gives sufficient conditions for a kinetic Mosco limit and does not discharge it.
 
   \paragraph{No-scale rigidity (structural lemma for Remark~\ref{rem:schwarzschild-uniqueness}).}
     The exclusion argument of Remark~\ref{rem:schwarzschild-uniqueness} rests on the structural claim that no
