@@ -2,6 +2,7 @@
   "bib_key": "Beau2026q6b",
   "web_url": "https://cosmochrony.org/science/emergent-geometry/q6/b/",
   "main_tex": "tex/Q6b.tex",
+  "publication_type": "workingpaper",
   "zenodo_id": 19744005,
   "doi": "10.5281/zenodo.19744005",
   "notes": "Version 2.1 aligns the description of Q6a with Q6a 2.3: Q6a defines gauge charges as fibre invariants, does not select the gauge group, and reads the connection and the Yang-Mills action as conditional on continuum hypotheses it does not prove. The results of Q6b are unchanged."
